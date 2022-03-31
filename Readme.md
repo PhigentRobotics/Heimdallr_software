@@ -1,57 +1,64 @@
-# Heimdallr 部署说明
+# Phigent Heimdallr deployment instructions
 
-# 硬件准备
+# Hardware prepare
 
-1. Heimdallr开发板
-2. TF SD卡
-3. TF SD读卡器
-4. micro usb线
+1. FPGA board: Xilinx KV260 or Heimdallr-DEB
+2. TF SD card
+3. TF SD card reader
+4. micro usb cable, ethernet cable
 5. PC，ubuntu 20.04
 
-## 烧录系统
+## Prepare the board system
 
-安装好SD卡烧录工具后，PC 插入TF SD卡和读卡器
+Prepare the software:
 
-1. 打开烧录软件 (https://www.balena.io/etcher/)
-2. 选择BSP系统软件 (https://www.xilinx.com/member/forms/download/xef.html?filename=petalinux-sdimage-2021.1-update1.wic.xz)
-3. 选择SD卡
-4. 开始烧录
+1. a SD card flash tool, download address: https://www.balena.io/etcher/
+2. a serial port management tool, download address: https://mobaxterm.mobatek.net/
+3. Board image file, download address:
 
-烧录完成后，取下sd卡安装到开发板，micro usb线连接开发板和PC
+After preparing the above hardware and software, perform the following steps:
 
-1. PC 打开MobaXterm(windows)、SecureCTR(mac/windows/linux)、PAC Manager（linux）
-2. 创建串口连接，（windows一般会是com4），波特率选择 115200
-3. 目前系统为无密码root登录
+1. Install the SD card flash tool on the PC
+2. Insert the SD card into the PC through the card reader
+3. Select the downloaded image
+4. Select SD card
+5. Start flash
 
-## 软件配置
+After flashing SD card, remove the SD card and perform the following steps:
 
-### PC端：
+1. Install the SD card on the development board, and connect the development board and PC with the mico USB cable.
+2. Open the serial port management tool on the PC side, find the corresponding serial port, such as COM4, and create a serial port system with a baud rate of 115200
+3. Turn on the power supply of the development board, and the system will automatically log in as root
+
+## Software configuration
+
+### On PC：
 
 1. tar -xf heimdallr-hmi-bin.tgz
 
-### 板端：
+### On FPGA board：
 
 1. dnf install -y xir xir-dev vart vart-dev packagegroup-petalinux-vitisai-dev
 2. cp -r k26heimdallr /lib/firmware/xilinx/
-3. #拷贝 bin、lib、config、models 到板端文件夹下（比如/opt）
+3. #copy the bin、lib、config、models to the board fold（such as:/opt）
 4. xmutil unloadapp
 5. xmutil loadapp k26heimdallr
 
 
 
-## 软件启动
+## Start the software
 
-### 板端(kv260)：
+### On board(for kv260)：
 
 1. cd /opt/
-2. sh bin/run_heimdallr-app_playback.sh & # kv260开发套件
+2. sh bin/run_heimdallr-app_playback.sh & # kv260 development kits
 
-### 板端(heimdalr-DEB)：
+### On board(for heimdalr-DEB)：
 1. cd /opt/
-2. sh bin/bin/run_heimdallr-app.sh & # heimdallr开发板
+2. sh bin/bin/run_heimdallr-app.sh & # Heimdallr-DEB development kits
 
 
-### PC端：
+### On PC：
 
 1. cd heimdallr-hmi-bin
 2. ./AppRun.sh
