@@ -1,0 +1,15 @@
+{
+  "img_dir_l": "/data0/users/shuhuan.sun/stereo_dump/chengfulu_1/undistort/",
+  "img_dir_r": "/data0/users/shuhuan.sun/stereo_dump/chengfulu_1/undistort/",
+  "img_list": "/data0/users/shuhuan.sun/stereo_dump/chengfulu_1/image_list.txt",
+  "vis_path": "../stereo_dump/stereo_origin_yuyv/result",
+  "test_correspond": true,
+  "input_width": 2880,
+  "input_height": 1860,
+  "input_format": "PNG",
+  "flow_json_file": "config/remaped_yuv444_input_workflow_cpu.json",
+  "ip_info": {
+    "ip": "0.0.0.0",
+    "port": "50051"
+  }
+}

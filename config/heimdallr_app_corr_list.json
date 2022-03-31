@@ -1,0 +1,16 @@
+{
+  "img_dir_l": "small_correspondence",
+  "img_dir_r": "small_correspondence",
+  "img_list": "small_correspondence/correspondence_list.txt",
+  "vis_path": "small_correspondence/result",
+  "test_correspond": true,
+  "time_limit": 150,
+  "input_width": 960,
+  "input_height": 540,
+  "input_format": "PNG",
+  "flow_json_file": "config/remaped_yuv444_input_workflow_cpu.json",
+  "ip_info": {
+    "ip": "0.0.0.0",
+    "port": "50051"
+  }
+}

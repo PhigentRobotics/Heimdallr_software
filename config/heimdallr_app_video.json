@@ -1,0 +1,11 @@
+{
+  "dev_l": "/dev/video0",
+  "dev_r": "/dev/video1",
+  "control_fps": 20,
+  "vis_path": "test/test_img/two_sensor_3d/result",
+  "flow_json_file": "config/yuv444/workflow.json",
+  "ip_info": {
+    "ip": "0.0.0.0",
+    "port": "50051"
+  }
+}

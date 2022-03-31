@@ -1,0 +1,80 @@
+{
+  "inputs": {"img_l_orig": {}, "img_r_orig":{}},
+  "outputs": {"result_l": {}, "result_r":{}},
+  "nodes": {
+    "img_l_orig" : {
+      "class": "ImgProcessModule",
+      "config_file": "config/yuv444_resize_ip/left_cam_preprocess_module.json",
+      "is_enabled": true,
+      "inputs": {
+        "img_l_orig" : {
+          "on_thread": 0,
+          "forward": "ImageSizeCvt",
+          "slot": 0
+        },
+        "size_cvt_l" : {
+          "on_thread": 0,
+          "forward": "ImageFrameOut",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "size_cvt_l" : {
+          "out_slot_name": "ImageSizeCvt"
+        },
+        "img_l_processed" : {
+          "out_slot_name": "ImageFrameOut"
+        }
+      }
+    },
+    "img_r_orig" : {
+      "class": "ImgProcessModule",
+      "config_file": "config/yuv444_resize_ip/right_cam_preprocess_module.json",
+      "is_enabled": true,
+      "inputs": {
+        "img_r_orig" : {
+          "on_thread": 1,
+          "forward": "ImageSizeCvt",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "size_cvt_r" : {
+          "out_slot_name": "ImageSizeCvt"
+        }
+      }
+    },
+    "dump_l" : {
+      "class": "HeimdallrDebugDumpModule",
+      "is_enabled": true,
+      "inputs": {
+        "img_l_processed" : {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "result_l" : {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "dump_r" : {
+      "class": "HeimdallrDebugDumpModule",
+      "is_enabled": true,
+      "inputs": {
+        "size_cvt_r" : {
+          "on_thread": 3,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        },
+      },
+      "outputs": {
+        "result_r" : {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    }
+  }
+}

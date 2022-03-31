@@ -1,0 +1,4 @@
+{
+  "config": "models/phifadnet/fadnet_1_test_params.json",
+  "encrypt": 0
+}

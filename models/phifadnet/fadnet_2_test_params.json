@@ -1,0 +1,46 @@
+{
+  "input_message_type": ["FlowMessage<ImageFramePtr>"],
+  "input_format": 0,
+  "#transform_type": "cpu",
+  "#is_device_addr": false,
+  "post_processing_type": "EmptyPostProcessor",
+  "transorm_config" : {
+    "layer_out": "nhwc",
+    "#min_shape": 576,
+    "#max_shape": 960,
+    "keep_ratio": 0,
+    "#diy_radio_resize": 0,
+    "transform_thread_num": 1,
+    "#target_h": 576,
+    "#target_w": 960,
+    "#resize_method": 0,
+    "#dev_id": 0,
+    "stride": 2,
+    "pad_val": 0,
+    "input_channel": 1,
+    "batch_size": 1,
+    "norm_scale": 2,
+    "#layerout": "nhwc",
+    "#is_input_device_addr": 0,
+    "norm_mean": [0],
+    "transform_pipeline": ["apply_norm"]
+  },
+  "net_config": {
+    "symbol_prefix": "",
+    "model_prefix": "PhiFADNet_2_int.xmodel",
+    "input_keys": [
+      "PhiFADNet__PhiFADNet_QuantStub_quant_conv3L_Decoder__3280_fix",
+      "PhiFADNet__PhiFADNet_OriginalCUNet_Small_cunet__ReLU_corr_activation__input_36_fix",
+      "PhiFADNet__PhiFADNet_QuantStub_quant_conv2L_Decoder__3279_fix",
+      "PhiFADNet__PhiFADNet_QuantStub_quant_conv1L_Decoder__3278_fix",
+      "PhiFADNet__PhiFADNet_QuantStub_quant_imgL_Decoder__input_106_fix"
+    ],
+    "dev_type": "vitis",
+    "dev_id": 0
+  },
+  "post_processing_config": {
+  },
+  "correlation" : {
+    "input_key": "PhiFADNet__PhiFADNet_OriginalCUNet_Small_cunet__ReLU_corr_activation__input_36_fix"
+  }
+}

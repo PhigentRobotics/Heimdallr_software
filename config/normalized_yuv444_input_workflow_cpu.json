@@ -1,0 +1,203 @@
+{
+  "inputs": {
+    "img_l_orig": {},
+    "img_r_orig": {}
+  },
+  "outputs": {
+    "sync_result": {},
+    "l_conv_dump_result": {},
+    "r_conv_dump_result": {},
+    "corr_dump_result": {},
+    "sync_result_dump_reult": {}
+  },
+  "nodes": {
+    "left_extract": {
+      "class": "DCVPredictModule",
+      "config_file": "config/yuv444/left_extract_dcv_module.json",
+      "inputs": {
+        "img_l_orig": {
+          "on_thread": 13,
+          "forward": "RawInRawOut",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "l_conv_1": {
+          "out_slot_name": "RawInRawOut"
+        },
+        "l_conv_2": {
+          "out_slot": 51
+        },
+        "l_conv_3": {
+          "out_slot": 52
+        }
+      }
+    },
+    "right_extract": {
+      "class": "DCVPredictModule",
+      "config_file": "config/yuv444/right_extract_dcv_module.json",
+      "inputs": {
+        "img_r_orig": {
+          "on_thread": 15,
+          "forward": "RawInRawOut",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "r_conv_3": {
+          "out_slot_name": "RawInRawOut"
+        }
+      }
+    },
+    "unet": {
+      "class": "DCVPredictModule",
+      "config_file": "config/yuv444/unet_dcv_module.json",
+      "inputs": {
+        "l_conv_3": {
+          "on_thread": 16,
+          "forward": "Correlation",
+          "slot": 0
+        },
+        "r_conv_3": {
+          "forward": "Correlation",
+          "slot": 1
+        },
+        "l_conv_3#1": {
+          "real_name": "l_conv_3",
+          "on_thread": 17,
+          "forward": "RawInRawOut",
+          "slot": 0
+        },
+        "corr_result": {
+          "forward": "RawInRawOut",
+          "slot": 1
+        },
+        "l_conv_2": {
+          "forward": "RawInRawOut",
+          "slot": 2
+        },
+        "l_conv_1": {
+          "forward": "RawInRawOut",
+          "slot": 3
+        },
+        "img_l_orig": {
+          "forward": "RawInRawOut",
+          "slot": 4
+        }
+      },
+      "outputs": {
+        "corr_result": {
+          "out_slot_name": "Correlation"
+        },
+        "unet_result": {
+          "out_slot_name": "RawInRawOut"
+        }
+      }
+    },
+    "sync": {
+      "class": "HeimdallrTimeStampSyncModule",
+      "inputs": {
+        "img_l_orig": {
+          "on_thread": 18,
+          "forward": "GetTimestamp",
+          "slot": 0
+        },
+        "sync_timestamp": {
+          "on_thread": 18,
+          "forward": "Sync",
+          "slot": 0
+        },
+        "unet_result": {
+          "forward": "Sync",
+          "slot": 1
+        }
+      },
+      "outputs": {
+        "sync_timestamp": {
+          "out_slot_name": "GetTimestamp"
+        },
+        "sync_result": {
+          "out_slot_name": "Sync"
+        }
+      }
+    },
+    "dump_l_conv": {
+      "class": "HeimdallrDebugDumpModule",
+      "config_file": "config/yuv444/dump_module_golden.json",
+      "is_enabled": true,
+      "inputs": {
+        "l_conv_1": {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        },
+        "l_conv_2": {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 1
+        },
+        "l_conv_3": {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 2
+        }
+      },
+      "outputs": {
+        "l_conv_dump_result": {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "dump_r_conv": {
+      "class": "HeimdallrDebugDumpModule",
+      "config_file": "config/yuv444/dump_module_golden.json",
+      "is_enabled": true,
+      "inputs": {
+        "r_conv_3": {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "r_conv_dump_result": {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "dump_corr": {
+      "class": "HeimdallrDebugDumpModule",
+      "config_file": "config/yuv444/dump_module_golden.json",
+      "is_enabled": true,
+      "inputs": {
+        "corr_result": {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "corr_dump_result": {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "dump_unet": {
+      "class": "HeimdallrDebugDumpModule",
+      "config_file": "config/yuv444/dump_module_golden.json",
+      "is_enabled": true,
+      "inputs": {
+        "sync_result": {
+          "on_thread": 1,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "sync_result_dump_reult": {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    }
+  }
+}

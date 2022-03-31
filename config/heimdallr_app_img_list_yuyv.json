@@ -1,0 +1,14 @@
+{
+  "img_dir_l": "./stereo_dump/stereo_origin_yuyv/left",
+  "img_dir_r": "./stereo_dump/stereo_origin_yuyv/right",
+  "img_list": "./stereo_dump/stereo_origin_yuyv/images_list.txt",
+  "vis_path": "./stereo_dump/stereo_origin_yuyv/result",
+  "input_width": 2880,
+  "input_height": 1860,
+  "input_format": "YUYV",
+  "flow_json_file": "config/yuv444_soft_resize_crop/yuyv_input_workflow_cpu.json",
+  "ip_info": {
+    "ip": "0.0.0.0",
+    "port": "50051"
+  }
+}

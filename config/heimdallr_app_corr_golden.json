@@ -1,0 +1,16 @@
+{
+  "img_dir_l": "golden_correspondence",
+  "img_dir_r": "golden_correspondence",
+  "img_list": "golden_correspondence/correspondence_list.txt",
+  "vis_path": "golden_correspondence/result",
+  "test_correspond": true,
+  "time_limit": 20,
+  "input_width": 960,
+  "input_height": 576,
+  "input_format": "YUV444",
+  "flow_json_file": "config/normalized_yuv444_input_workflow_cpu.json",
+  "ip_info": {
+    "ip": "0.0.0.0",
+    "port": "50051"
+  }
+}

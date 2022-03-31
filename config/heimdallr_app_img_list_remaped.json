@@ -1,0 +1,15 @@
+{
+  "img_dir_l": "/data0/users/shuhuan.sun/stereo_dump/collected_20220321_loc-zhongguancundonglu_speed-20to30_camera-2Mvv6_lidar-vv6_index-01/",
+  "img_dir_r": "/data0/users/shuhuan.sun/stereo_dump/collected_20220321_loc-zhongguancundonglu_speed-20to30_camera-2Mvv6_lidar-vv6_index-01/",
+  "img_list": "/data0/users/shuhuan.sun/stereo_dump/collected_20220321_loc-zhongguancundonglu_speed-20to30_camera-2Mvv6_lidar-vv6_index-01/undistort_video1_2.txt",
+  "vis_path": "../stereo_dump/stereo_origin_yuyv/result",
+  "test_correspond": true,
+  "input_width": 1920,
+  "input_height": 1080,
+  "input_format": "PNG",
+  "flow_json_file": "config/remaped_yuv444_input_workflow_cpu_2mp.json",
+  "ip_info": {
+    "ip": "0.0.0.0",
+    "port": "50051"
+  }
+}

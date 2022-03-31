@@ -1,0 +1,37 @@
+{
+  "input_message_type": ["FlowMessage<ImageFramePtr>"],
+  "input_format": 0,
+  "#transform_type": "cpu",
+  "#is_device_addr": false,
+  "post_processing_type": "EmptyPostProcessor",
+  "transorm_config" : {
+    "layer_out": "nhwc",
+    "min_shape": 576,
+    "max_shape": 960,
+    "keep_ratio": 0,
+    "#diy_radio_resize": 0,
+    "transform_thread_num": 1,
+    "target_h": 576,
+    "target_w": 960,
+    "resize_method": 0,
+    "#dev_id": 0,
+    "stride": 2,
+    "pad_val": 0,
+    "input_channel": 3,
+    "batch_size": 1,
+    "norm_scale": 1,
+    "norm_scale_vec":[1.003921568627451, 1.003921568627451, 1.003921568627451],
+    "layerout": "nhwc",
+    "#is_input_device_addr": 0,
+    "norm_mean": [127.5, 127.5, 127.5],
+    "transform_pipeline": ["apply_resize","apply_norm_v1"]
+  },
+  "net_config": {
+    "symbol_prefix": "",
+    "model_prefix": "PhiFADNet_0_int.xmodel",
+    "dev_type": "vitis",
+    "dev_id": 0
+  },
+  "post_processing_config": {
+  }
+}

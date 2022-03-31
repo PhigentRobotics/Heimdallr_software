@@ -1,0 +1,5 @@
+lib/*.a
+lib/pkgconfig*
+lib/objects-Release*
+lib/cmake*
+stereo_dump/

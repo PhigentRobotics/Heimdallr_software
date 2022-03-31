@@ -1,0 +1,13 @@
+{
+  "calib_config": "config/ca1_stereo.yml",
+  "image_width": 1920,
+  "image_height": 1080,
+  "resize_width": 1920,
+  "resize_height": 1080,
+  "crop_x": 480,
+  "crop_y": 252,
+  "crop_width": 960,
+  "crop_height": 576,
+  "type": "right",
+  "target_format": "YUV"
+}

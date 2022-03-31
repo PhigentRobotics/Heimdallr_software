@@ -1,0 +1,14 @@
+{
+  "calib_config": "config/StereoCam004_CropResize_960x576.yml",
+  "image_width": 960,
+  "image_height": 576,
+  "resize_width": 960,
+  "resize_height": 576,
+  "crop_x": 240,
+  "crop_y": 177,
+  "crop_width": 960,
+  "crop_height": 576,
+  "type": "left",
+  "target_format": "YUV",
+  "skip_num": 2
+}

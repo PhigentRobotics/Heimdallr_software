@@ -1,0 +1,288 @@
+{
+  "inputs": {
+    "img_l_orig": null,
+    "img_r_orig": null
+  },
+  "outputs": {
+    "sync_result": null
+  },
+  "nodes": {
+      "left_preprocess": {
+      "class": "ImgProcessModule",
+      "config_file": "config/yuv444_resize_ip/left_cam_preprocess_module.json",
+      "inputs": {
+        "img_l_orig": {
+          "on_thread": 0,
+          "forward": "ImageSizeCvt",
+          "slot": 0
+        },
+        "img_l_yuv444_croped": {
+          "on_thread": 0,
+          "forward": "ImageClone",
+          "slot": 0
+        },
+        "img_l_clone": {
+          "on_thread": 1,
+          "forward": "ImageFrameRemap",
+          "slot": 0
+        },
+        "img_l_yuv444_remaped": {
+          "on_thread": 2,
+          "forward": "ImageFrameOut",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "img_l_yuv444_croped": {
+          "out_slot_name": "ImageSizeCvt"
+        },
+        "img_l_clone": {
+          "out_slot_name": "ImageClone"
+        },
+        "img_l_yuv444_remaped": {
+          "out_slot_name": "ImageFrameRemap"
+        },
+        "img_l_processed": {
+          "out_slot_name": "ImageFrameOut"
+        }
+      }
+    },
+    "right_preprocess": {
+      "class": "ImgProcessModule",
+      "config_file": "config/yuv444_resize_ip/right_cam_preprocess_module.json",
+      "inputs": {
+        "img_r_orig": {
+          "on_thread": 3,
+          "forward": "ImageSizeCvt",
+          "slot": 0
+        },
+        "img_r_yuv444_croped": {
+          "on_thread": 3,
+          "forward": "ImageClone",
+          "slot": 0
+        },
+        "img_r_clone": {
+          "on_thread": 4,
+          "forward": "ImageFrameRemap",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "img_r_yuv444_croped": {
+          "out_slot_name": "ImageSizeCvt"
+        },
+        "img_r_clone": {
+          "out_slot_name": "ImageClone"
+        },
+        "img_r_processed": {
+          "out_slot_name": "ImageFrameRemap"
+        }
+      }
+    },
+    "left_extract": {
+      "class": "DCVPredictModule",
+      "config_file": "config/yuv444_resize_ip/left_extract_dcv_module.json",
+      "inputs": {
+        "img_l_processed": {
+          "on_thread": 12,
+          "forward": "ImageTransform",
+          "slot": 0
+        },
+        "img_l_normalized": {
+          "on_thread": 13,
+          "forward": "RawInRawOut",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "img_l_normalized": {
+          "out_slot_name": "ImageTransform"
+        },
+        "l_conv_1": {
+          "out_slot_name": "RawInRawOut"
+        },
+        "l_conv_2": {
+          "out_slot": 51
+        },
+        "l_conv_3": {
+          "out_slot": 52
+        }
+      }
+    },
+    "right_extract": {
+      "class": "DCVPredictModule",
+      "config_file": "config/yuv444_resize_ip/right_extract_dcv_module.json",
+      "inputs": {
+        "img_r_processed": {
+          "on_thread": 14,
+          "forward": "ImageTransform",
+          "slot": 0
+        },
+        "img_r_normalized": {
+          "on_thread": 13,
+          "forward": "RawInRawOut",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "img_r_normalized": {
+          "out_slot_name": "ImageTransform"
+        },
+        "r_conv_3": {
+          "out_slot_name": "RawInRawOut"
+        }
+      }
+    },
+    "unet": {
+      "class": "DCVPredictModule",
+      "config_file": "config/yuv444_resize_ip/unet_dcv_module.json",
+      "inputs": {
+        "l_conv_3": {
+          "on_thread": 16,
+          "forward": "Correlation",
+          "slot": 0
+        },
+        "r_conv_3": {
+          "forward": "Correlation",
+          "slot": 1
+        },
+        "l_conv_3#1": {
+          "real_name": "l_conv_3",
+          "on_thread": 13,
+          "forward": "RawInRawOut",
+          "slot": 0
+        },
+        "corr_result": {
+          "forward": "RawInRawOut",
+          "slot": 1
+        },
+        "l_conv_2": {
+          "forward": "RawInRawOut",
+          "slot": 2
+        },
+        "l_conv_1": {
+          "forward": "RawInRawOut",
+          "slot": 3
+        },
+        "img_l_normalized": {
+          "forward": "RawInRawOut",
+          "slot": 4
+        }
+      },
+      "outputs": {
+        "corr_result": {
+          "out_slot_name": "Correlation"
+        },
+        "unet_result": {
+          "out_slot_name": "RawInRawOut"
+        }
+      }
+    },
+    "filter": {
+      "class": "ImgFilterModule",
+      "inputs": {
+        "unet_result": {
+          "on_thread": 17,
+          "forward": "ImageFilter",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "filter_result": {
+          "out_slot_name": "ImageFilter"
+        }
+      }
+    },
+    "sync": {
+      "class": "HeimdallrTimeStampSyncModule",
+      "inputs": {
+        "img_l_processed": {
+          "on_thread": 18,
+          "forward": "GetTimestamp",
+          "slot": 0
+        },
+        "sync_timestamp": {
+          "on_thread": 18,
+          "forward": "Sync",
+          "slot": 0
+        },
+        "filter_result": {
+          "forward": "Sync",
+          "slot": 1
+        }
+      },
+      "outputs": {
+        "sync_timestamp": {
+          "out_slot_name": "GetTimestamp"
+        },
+        "sync_result": {
+          "out_slot_name": "Sync"
+        }
+      }
+    },
+    "dump": {
+      "class": "HeimdallrDebugDumpModule",
+      "is_enabled": false,
+      "inputs": {
+        "img_l_rgb_croped": {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "l_dump_result": {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "dump_l" : {
+      "class": "HeimdallrDebugDumpModule",
+      "is_enabled": false,
+      "inputs": {
+        "img_l_processed" : {
+          "on_thread": 2,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "result_l" : {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "dump_r" : {
+      "class": "HeimdallrDebugDumpModule",
+      "is_enabled": false,
+      "inputs": {
+        "img_r_processed" : {
+          "on_thread": 3,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "result_r" : {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    },
+    "unet_dump": {
+      "class": "HeimdallrDebugDumpModule",
+      "is_enabled": false,
+      "inputs": {
+        "unet_result": {
+          "on_thread": 3,
+          "forward": "ImageFrameDump",
+          "slot": 0
+        }
+      },
+      "outputs": {
+        "unet_result_dump": {
+          "out_slot_name": "ImageFrameDump"
+        }
+      }
+    }
+  }
+}
