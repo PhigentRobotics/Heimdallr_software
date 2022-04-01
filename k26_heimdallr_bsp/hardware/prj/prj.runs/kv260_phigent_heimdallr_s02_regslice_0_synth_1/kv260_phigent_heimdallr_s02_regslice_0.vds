@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 20 23:30:05 2021
+# Process ID: 7712
+# Current directory: /media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/kv260_phigent_heimdallr_s02_regslice_0_synth_1
+# Command line: vivado -log kv260_phigent_heimdallr_s02_regslice_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kv260_phigent_heimdallr_s02_regslice_0.tcl
+# Log file: /media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/kv260_phigent_heimdallr_s02_regslice_0_synth_1/kv260_phigent_heimdallr_s02_regslice_0.vds
+# Journal file: /media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/kv260_phigent_heimdallr_s02_regslice_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source kv260_phigent_heimdallr_s02_regslice_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/phigent_new/kv260_phigent_heimdallr/hw_platform/ipcache'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:vcu:1.2'. The one found in IP location '/workspace/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo/ip/vcu_v1_2' will take precedence over the same IP in the Xilinx installed IP.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP kv260_phigent_heimdallr_s02_regslice_0, cache-ID = 3483cfa6ce982c1b.
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 20 23:30:17 2021...

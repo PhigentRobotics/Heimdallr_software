@@ -1,0 +1,59 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Mon Dec 20 23:37:08 2021
+| Host         : liyunzhi-ThinkPad-X1 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_methodology -file kv260_phigent_heimdallr_wrapper_methodology_drc_routed.rpt -pb kv260_phigent_heimdallr_wrapper_methodology_drc_routed.pb -rpx kv260_phigent_heimdallr_wrapper_methodology_drc_routed.rpx
+| Design       : kv260_phigent_heimdallr_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++---------+----------+--------------------------------------------+------------+
+| Rule    | Severity | Description                                | Violations |
++---------+----------+--------------------------------------------+------------+
+| LUTAR-1 | Warning  | LUT drives async reset alert               | 1          |
+| CLKC-56 | Advisory | MMCME4 with global clock driver has no LOC | 1          |
+| CLKC-58 | Advisory | PLLE4 with global clock driver has no LOC  | 2          |
++---------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/xpm_arst_03_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/xpm_arst_03/arststages_ff_reg[0]/CLR,
+kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/xpm_arst_03/arststages_ff_reg[1]/CLR
+kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/xpm_arst_03/arststages_ff_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell kv260_phigent_heimdallr_i/clk_wiz_0/inst/mmcme4_adv_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) kv260_phigent_heimdallr_i/PS_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+CLKC-58#1 Advisory
+PLLE4 with global clock driver has no LOC  
+The PLLE4_ADV cell kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_4a56_phy_0_rx_support_i/slave_rx.bd_4a56_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst CLKIN pin is driven by global Clock buffer kv260_phigent_heimdallr_i/clk_wiz_0/inst/clkout1_buf and does not have a LOC constraint. It is recommended to LOC the PLL and use the CLOCK_DEDICATED_ROUTE constraint on the net driven by the global Clock buffer.
+Related violations: <none>
+
+CLKC-58#2 Advisory
+PLLE4 with global clock driver has no LOC  
+The PLLE4_ADV cell kv260_phigent_heimdallr_i/capture_pipeline_1/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_8a97_phy_0_rx_support_i/slave_rx.bd_8a97_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst CLKIN pin is driven by global Clock buffer kv260_phigent_heimdallr_i/clk_wiz_0/inst/clkout1_buf and does not have a LOC constraint. It is recommended to LOC the PLL and use the CLOCK_DEDICATED_ROUTE constraint on the net driven by the global Clock buffer.
+Related violations: <none>
+
+

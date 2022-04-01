@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1640014120">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="kv260_phigent_heimdallr_wrapper.drc"/>
+  <File Type="BG-BGN" Name="kv260_phigent_heimdallr_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="kv260_phigent_heimdallr_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="kv260_phigent_heimdallr_wrapper.ltx"/>
+  <File Type="RBD_FILE" Name="kv260_phigent_heimdallr_wrapper.rbd"/>
+  <File Type="NPI_FILE" Name="kv260_phigent_heimdallr_wrapper.npi"/>
+  <File Type="RNPI_FILE" Name="kv260_phigent_heimdallr_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="kv260_phigent_heimdallr_wrapper.cfi"/>
+  <File Type="RCFI_FILE" Name="kv260_phigent_heimdallr_wrapper.rcfi"/>
+  <File Type="RDI-RDI" Name="kv260_phigent_heimdallr_wrapper.vdi"/>
+  <File Type="PDI-FILE" Name="kv260_phigent_heimdallr_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="kv260_phigent_heimdallr_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="kv260_phigent_heimdallr_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="kv260_phigent_heimdallr_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="kv260_phigent_heimdallr_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="kv260_phigent_heimdallr_wrapper.msk"/>
+  <File Type="BG-BIN" Name="kv260_phigent_heimdallr_wrapper.bin"/>
+  <File Type="BG-BIT" Name="kv260_phigent_heimdallr_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="kv260_phigent_heimdallr_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="kv260_phigent_heimdallr_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="kv260_phigent_heimdallr_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="kv260_phigent_heimdallr_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="kv260_phigent_heimdallr_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="kv260_phigent_heimdallr_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="kv260_phigent_heimdallr_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="kv260_phigent_heimdallr_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="kv260_phigent_heimdallr_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="kv260_phigent_heimdallr_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="kv260_phigent_heimdallr_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="kv260_phigent_heimdallr_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="kv260_phigent_heimdallr_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="kv260_phigent_heimdallr_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="kv260_phigent_heimdallr_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="kv260_phigent_heimdallr_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="kv260_phigent_heimdallr_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="kv260_phigent_heimdallr_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="kv260_phigent_heimdallr_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="kv260_phigent_heimdallr_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="kv260_phigent_heimdallr_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="kv260_phigent_heimdallr_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="kv260_phigent_heimdallr_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="kv260_phigent_heimdallr_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="kv260_phigent_heimdallr_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="kv260_phigent_heimdallr_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="kv260_phigent_heimdallr_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="kv260_phigent_heimdallr_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="kv260_phigent_heimdallr_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="kv260_phigent_heimdallr_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="kv260_phigent_heimdallr_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="kv260_phigent_heimdallr_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="kv260_phigent_heimdallr_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="kv260_phigent_heimdallr_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="kv260_phigent_heimdallr_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="kv260_phigent_heimdallr_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="kv260_phigent_heimdallr_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="kv260_phigent_heimdallr_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="kv260_phigent_heimdallr_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="kv260_phigent_heimdallr_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="kv260_phigent_heimdallr_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="kv260_phigent_heimdallr_wrapper_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="kv260_phigent_heimdallr_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="kv260_phigent_heimdallr_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="kv260_phigent_heimdallr_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="kv260_phigent_heimdallr_wrapper_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="kv260_phigent_heimdallr_wrapper_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="kv260_phigent_heimdallr_wrapper_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="kv260_phigent_heimdallr_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/kv260_phigent_heimdallr/kv260_phigent_heimdallr.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hw_platform/prj/kv260_phigent_heimdallr.srcs/sources_1/bd/kv260_phigent_heimdallr/kv260_phigent_heimdallr.bd"/>
+        <Attr Name="ImportTime" Val="1639841244"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/kv260_phigent_heimdallr_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hw_platform/prj/kv260_phigent_heimdallr.srcs/sources_1/imports/hdl/kv260_phigent_heimdallr_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1639568722"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="kv260_phigent_heimdallr_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hw_platform/prj/kv260_phigent_heimdallr.srcs/constrs_1/imports/xdc/pin.xdc"/>
+        <Attr Name="ImportTime" Val="1639489132"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_auto_us_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_s01_regslice_15"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_xbar_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_xbar_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_auto_us_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_xbar_10"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_xbar_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_4a56_vfb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_8a97_vfb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_8a97_r_sync_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_4a56_phy_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_8a97_phy_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_xbar_11"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_PS_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_vcu_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_s02_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_axi_reg_slice_vmcu_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_xbar_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_4a56_rx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_8a97_rx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_4a56_r_sync_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_proc_sys_reset_600MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_proc_sys_reset_300MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_proc_sys_reset_100MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_v_frmbuf_wr_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_axis_data_fifo_cap_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_v_frmbuf_wr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_axis_subset_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_axis_subset_converter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="kv260_phigent_heimdallr_axis_data_fifo_cap_0"/>
+</GenRun>

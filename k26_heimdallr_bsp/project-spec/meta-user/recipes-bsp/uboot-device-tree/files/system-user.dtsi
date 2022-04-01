@@ -1,0 +1,7 @@
+/include/ "system-conf.dtsi"
+/ {
+	chosen {
+                bootargs = "earlycon console=ttyPS1,115200 clk_ignore_unused ext4=/dev/mmcblk0p2:/rootfs init_fatal_sh=1 cma=1000M ";
+                stdout-path = "serial1:115200n8";
+        };
+};

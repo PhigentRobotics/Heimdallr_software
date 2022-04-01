@@ -1,0 +1,46 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Mon Dec 20 23:33:12 2021
+| Host         : liyunzhi-ThinkPad-X1 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_drc -file kv260_phigent_heimdallr_wrapper_drc_opted.rpt -pb kv260_phigent_heimdallr_wrapper_drc_opted.pb -rpx kv260_phigent_heimdallr_wrapper_drc_opted.rpx
+| Design       : kv260_phigent_heimdallr_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++--------+----------+------------------+------------+
+| Rule   | Severity | Description      | Violations |
++--------+----------+------------------+------------+
+| DPIP-2 | Warning  | Input pipelining | 2          |
++--------+----------+------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP kv260_phigent_heimdallr_i/capture_pipeline_0/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_154/Bytes2AXIMMvideo_U0/mac_muladd_16ns_12ns_32ns_32_4_1_U95/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_mac_muladd_16ns_12ns_32ns_32_4_1_DSP48_0_U/p_reg_reg input kv260_phigent_heimdallr_i/capture_pipeline_0/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_154/Bytes2AXIMMvideo_U0/mac_muladd_16ns_12ns_32ns_32_4_1_U95/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_mac_muladd_16ns_12ns_32ns_32_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP kv260_phigent_heimdallr_i/capture_pipeline_1/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_154/Bytes2AXIMMvideo_U0/mac_muladd_16ns_12ns_32ns_32_4_1_U95/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_mac_muladd_16ns_12ns_32ns_32_4_1_DSP48_0_U/p_reg_reg input kv260_phigent_heimdallr_i/capture_pipeline_1/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_154/Bytes2AXIMMvideo_U0/mac_muladd_16ns_12ns_32ns_32_4_1_U95/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_mac_muladd_16ns_12ns_32ns_32_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+

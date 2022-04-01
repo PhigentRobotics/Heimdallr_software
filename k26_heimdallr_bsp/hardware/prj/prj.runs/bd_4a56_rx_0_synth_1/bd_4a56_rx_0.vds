@@ -1,0 +1,843 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 18 23:40:02 2021
+# Process ID: 9280
+# Current directory: /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1
+# Command line: vivado -log bd_4a56_rx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_4a56_rx_0.tcl
+# Log file: /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/bd_4a56_rx_0.vds
+# Journal file: /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_4a56_rx_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/hw_platform/ipcache'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:vcu:1.2'. The one found in IP location '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo/ip/vcu_v1_2' will take precedence over the same IP in the Xilinx installed IP.
+Command: synth_design -top bd_4a56_rx_0 -part xck26-sfvc784-2LV-c -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9476
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2746.973 ; gain = 46.746 ; free physical = 1928 ; free virtual = 4597
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_rx_0' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/synth/bd_4a56_rx_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (2#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (3#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (4#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (6#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (7#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (8#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (11#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:715]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse' (13#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:715]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (14#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (14#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (14#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (15#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (15#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (16#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (17#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (17#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (17#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (18#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst__parameterized0' (18#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (18#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized8' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized8' (18#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized9' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized9' (18#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (18#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (19#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized2' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (22#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized2' (22#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (22#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_rx_0' (31#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/synth/bd_4a56_rx_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2849.129 ; gain = 148.902 ; free physical = 1990 ; free virtual = 4662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2866.941 ; gain = 166.715 ; free physical = 1653 ; free virtual = 4333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2866.941 ; gain = 166.715 ; free physical = 1653 ; free virtual = 4333
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2875.848 ; gain = 0.000 ; free physical = 1590 ; free virtual = 4264
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_4a56_rx_0_fixed_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_4a56_rx_0_fixed_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_4a56_rx_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3043.629 ; gain = 0.000 ; free physical = 731 ; free virtual = 3338
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_4a56_rx_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_4a56_rx_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_4a56_rx_0.xdc] for cell 'inst'
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_rx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_rx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_rx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_18' of design 'preSynthElab_1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/AXI_LITE.reg_inf/xpm_single_18 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_19' of design 'preSynthElab_1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/AXI_LITE.reg_inf/xpm_single_19 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_20' of design 'preSynthElab_1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/AXI_LITE.reg_inf/xpm_single_20 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_rx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_rx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_rx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 208 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3043.629 ; gain = 0.000 ; free physical = 722 ; free virtual = 3330
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3043.629 ; gain = 0.000 ; free physical = 699 ; free virtual = 3307
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3043.629 ; gain = 343.402 ; free physical = 452 ; free virtual = 3067
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3043.629 ; gain = 343.402 ; free physical = 451 ; free virtual = 3066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_02. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_03. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_04. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /xpm_array_single_05. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /xpm_array_wc_single_05. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_01. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_01. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/xpm_arst_03. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_04. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_05. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[0].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[10].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[11].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[12].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[13].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[14].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[15].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[16].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[17].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[18].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[19].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[1].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[20].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[21].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[22].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[23].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[24].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[25].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[26].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[27].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[28].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[29].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[2].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[30].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[31].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[32].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[33].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[34].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[35].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[36].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[37].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[38].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[39].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[3].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[40].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[41].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[42].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[43].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[44].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[4].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[5].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[6].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[7].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[8].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[9].hsc2r_bus_cdc . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /ecc_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /img_info_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.xpm_single_fifo_rst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_CL_ASYNC[0].xpm_single_cl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_CL_ASYNC[1].xpm_single_cl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[0].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[10].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[11].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[12].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[13].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[14].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[15].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[16].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[17].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[18].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[19].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[1].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[2].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[3].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[4].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[5].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[6].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[7].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[8].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\PPI_DL_ASYNC[9].xpm_single_dl_sb . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[0].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[1].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[2].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[3].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[4].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[5].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[6].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[7].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[8].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[9].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[10].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[11].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[12].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[13].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[14].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[15].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[16].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[17].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[18].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[19].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[20].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[21].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[22].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[23].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[24].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[25].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[26].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[27].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[28].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[29].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[30].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[31].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[32].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[33].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[34].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[35].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[36].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[37].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[38].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[39].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[40].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[41].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[42].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[43].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[44].hsc2r_bus_cdc /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /ecc_cdc/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /img_info_cdc/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /xpm_pulse_02/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /\LP_CNT_C2R[0].xpm_pulse_01 /xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[0].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[1].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[2].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[3].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[4].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[5].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[6].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[7].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[8].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[9].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[10].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[11].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[12].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[13].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[14].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[15].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[16].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[17].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[18].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[19].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[20].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[21].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[22].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[23].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[24].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[25].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[26].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[27].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[28].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[29].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[30].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[31].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[32].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[33].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[34].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[35].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[36].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[37].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[38].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[39].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[40].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[41].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[42].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[43].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /\HSC2R_CDC[44].hsc2r_bus_cdc /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /ecc_cdc/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /img_info_cdc/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_01. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_07. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_08. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_17. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_18. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_19. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_20. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_frst_c2p. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_frst_p2c. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_vfb_02. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_02. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_05. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_vfb_01. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\LANE_1.ppi_fifo0 /\CSI_OPT3_OFF.ppi_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\LANE_2.ppi_fifo1 /\CSI_OPT3_OFF.ppi_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\LANE_3.ppi_fifo2 /\CSI_OPT3_OFF.ppi_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\LANE_4.ppi_fifo3 /\CSI_OPT3_OFF.ppi_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\RX_1500M.line_buffer /line_buf. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3043.629 ; gain = 343.402 ; free physical = 661 ; free virtual = 3277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'mipi_csi2_rx_ctrl_v1_0_8_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 36 for RAM "xpm_memory_base__parameterized0:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "xpm_memory_base__parameterized0:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "xpm_memory_base__parameterized0:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "xpm_memory_base__parameterized0:/gen_wr_a.gen_word_narrow.mem_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__parameterized0'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                              000
+                  iSTATE |                              100 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE0 |                              011 |                              100
+                 iSTATE2 |                              001 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'mipi_csi2_rx_ctrl_v1_0_8_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3043.629 ; gain = 343.402 ; free physical = 2172 ; free virtual = 4805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 4     
+	  16 Input   16 Bit       Adders := 1     
+	   4 Input   13 Bit       Adders := 4     
+	   2 Input   13 Bit       Adders := 1     
+	   4 Input   12 Bit       Adders := 5     
+	   3 Input   12 Bit       Adders := 1     
+	   4 Input    6 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 2     
+	   3 Input    6 Bit       Adders := 4     
+	   4 Input    5 Bit       Adders := 22    
+	   2 Input    5 Bit       Adders := 4     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    4 Bit       Adders := 12    
+	   3 Input    4 Bit       Adders := 4     
+	   6 Input    4 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     26 Bit         XORs := 1     
+	   2 Input     24 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      6 Bit         XORs := 4     
+	   2 Input      5 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 119   
+	   3 Input      1 Bit         XORs := 21    
+	   4 Input      1 Bit         XORs := 13    
+	   7 Input      1 Bit         XORs := 6     
+	  13 Input      1 Bit         XORs := 2     
+	  12 Input      1 Bit         XORs := 3     
+	  10 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 11    
+	   8 Input      1 Bit         XORs := 3     
+	  11 Input      1 Bit         XORs := 2     
++---Registers : 
+	               68 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               46 Bit    Registers := 4     
+	               42 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 27    
+	               26 Bit    Registers := 8     
+	               16 Bit    Registers := 37    
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	               12 Bit    Registers := 18    
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 49    
+	                5 Bit    Registers := 44    
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 145   
+	                2 Bit    Registers := 36    
+	                1 Bit    Registers := 742   
++---RAMs : 
+	             272K Bit	(4096 X 68 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   68 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   3 Input   56 Bit        Muxes := 1     
+	   2 Input   56 Bit        Muxes := 2     
+	  12 Input   40 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 24    
+	   4 Input   32 Bit        Muxes := 1     
+	  28 Input   26 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 9     
+	   4 Input   16 Bit        Muxes := 2     
+	  16 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 6     
+	   6 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 5     
+	   4 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 3     
+	  15 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 164   
+	   4 Input    2 Bit        Muxes := 37    
+	   5 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 320   
+	   4 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 6     
+	  16 Input    1 Bit        Muxes := 16    
+	  12 Input    1 Bit        Muxes := 1     
+	  28 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 36 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 3043.629 ; gain = 343.402 ; free physical = 772 ; free virtual = 3588
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                               | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 4 K x 68(NO_CHANGE)    | W |   | 4 K x 68(NO_CHANGE)    |   | R | Port A and B     | 0      | 8      | 4,2,1,1         | 
++------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                  | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|inst/\AXI_LITE.reg_inf /\gen_spkt_fifo/generic_pkt /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 26              | RAM32M16 x 2  | 
+|inst/\gen_pkt_fifo/pkt_fifo /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst                         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 42              | RAM32M16 x 3  | 
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/AXI_LITE.reg_inf/gen_spkt_fifo/xpm_arst_03/src_arst' to pin 'inst/AXI_LITE.reg_inf/i_9/gen_spkt_fifo/rstn_i/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/xpm_arst_05/src_arst' to pin 'inst/rstn_i1_inferred/i_0/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 3405.535 ; gain = 705.309 ; free physical = 638 ; free virtual = 3463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5556] The block RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 36 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 3461.582 ; gain = 761.355 ; free physical = 631 ; free virtual = 3453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                               | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/\RX_1500M.line_buffer/line_buf /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 4 K x 68(NO_CHANGE)    | W |   | 4 K x 68(NO_CHANGE)    |   | R | Port A and B     | 0      | 8      | 4,2,1,1         | 
++------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                  | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|xpm_fifo_sync:/xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 16 x 12              | RAM32M16 x 1  | 
+|inst/\AXI_LITE.reg_inf /\gen_spkt_fifo/generic_pkt /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 26              | RAM32M16 x 2  | 
+|inst/\gen_pkt_fifo/pkt_fifo /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst                         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 42              | RAM32M16 x 3  | 
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 3485.605 ; gain = 785.379 ; free physical = 2369 ; free virtual = 4531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin RX_1500M.line_buffer/line_buf:sleep to constant 0
+INFO: [Synth 8-3295] tying undriven pin AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt:sleep to constant 0
+INFO: [Synth 8-3295] tying undriven pin gen_pkt_fifo/pkt_fifo:sleep to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:40 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1563 ; free virtual = 3876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:40 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1563 ; free virtual = 3876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1486 ; free virtual = 3800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1482 ; free virtual = 3796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1439 ; free virtual = 3753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1436 ; free virtual = 3749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+-------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+-------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mipi_csi2_rx_ctrl_v1_0_8_top | frst_d3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-----------------------------+-------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    33|
+|2     |LUT1     |    75|
+|3     |LUT2     |   367|
+|4     |LUT3     |   277|
+|5     |LUT4     |   428|
+|6     |LUT5     |   417|
+|7     |LUT6     |   893|
+|8     |MUXF7    |    34|
+|9     |MUXF8    |    17|
+|10    |RAM32M16 |     9|
+|11    |RAMB36E2 |     8|
+|17    |SRL16E   |     1|
+|18    |FDCE     |    13|
+|19    |FDPE     |    34|
+|20    |FDRE     |  3583|
+|21    |FDSE     |    70|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3494.512 ; gain = 794.285 ; free physical = 1431 ; free virtual = 3745
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 3494.512 ; gain = 617.598 ; free physical = 1458 ; free virtual = 3772
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3494.520 ; gain = 794.285 ; free physical = 1456 ; free virtual = 3770
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3494.520 ; gain = 0.000 ; free physical = 1491 ; free virtual = 3808
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3544.371 ; gain = 0.000 ; free physical = 1427 ; free virtual = 3775
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 9 instances
+
+Synth Design complete, checksum: 2d850e2f
+INFO: [Common 17-83] Releasing license: Synthesis
+170 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 3544.371 ; gain = 999.148 ; free physical = 1863 ; free virtual = 4219
+INFO: [Common 17-1381] The checkpoint '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/bd_4a56_rx_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_4a56_rx_0, cache-ID = c4fd0aed202561a7
+INFO: [Coretcl 2-1174] Renamed 298 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_rx_0_synth_1/bd_4a56_rx_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_4a56_rx_0_utilization_synth.rpt -pb bd_4a56_rx_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 18 23:42:15 2021...

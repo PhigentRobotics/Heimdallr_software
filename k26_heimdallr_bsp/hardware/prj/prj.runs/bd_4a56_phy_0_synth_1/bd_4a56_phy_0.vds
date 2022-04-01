@@ -1,0 +1,472 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 18 23:44:57 2021
+# Process ID: 12106
+# Current directory: /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1
+# Command line: vivado -log bd_4a56_phy_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_4a56_phy_0.tcl
+# Log file: /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/bd_4a56_phy_0.vds
+# Journal file: /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_4a56_phy_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/hw_platform/ipcache'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:vcu:1.2'. The one found in IP location '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo/ip/vcu_v1_2' will take precedence over the same IP in the Xilinx installed IP.
+Command: synth_design -top bd_4a56_phy_0 -part xck26-sfvc784-2LV-c -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12156
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_ppm_fifo with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:3713]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5265]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5266]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5267]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5268]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5269]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5270]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5271]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_calib_cntrl with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:5272]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_tx_rst_logic with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:10872]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_rst_logic with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:11386]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_tx_support_rst_logic with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:12121]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_support_rst_logic with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:12496]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_data_lane with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:14933]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_data_lane with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:14934]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_fab_top with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:27453]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_fab_top with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:27454]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_fab_top with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:27455]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_3_2_rx_fab_top with formal parameter declaration list [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/b324/hdl/mipi_dphy_v4_3_vl_rfs.sv:27489]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2757.973 ; gain = 45.746 ; free physical = 289 ; free virtual = 2768
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0.v:91]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_core' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_core.v:93]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_c1' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_c1.v:100]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_support' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:103]
+WARNING: [Synth 8-7071] port 'lane0_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane1_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane2_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane3_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane4_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane5_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane6_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'lane7_tap' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'tap_val_dyn_out' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'alt_skew_calb' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7071] port 'init_periodic_skew_calb' of module 'mipi_dphy_v4_3_2_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+WARNING: [Synth 8-7023] instance 'dphy_rx_fab_top' of module 'mipi_dphy_v4_3_2_rx_fab_top' has 320 connections declared, but only 309 given [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:746]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_hssio_rx' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/synth/bd_4a56_phy_0_hssio_rx.v:84]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_1' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_1.v:51]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_hssio_rx_hssio_wiz_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx_hssio_wiz_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_hssio_rx_mipi_iobuf_rx' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/hdl/bd_4a56_phy_0_hssio_rx_mipi_iobuf_rx.v:49]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DPHY' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51788]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DPHY' (10#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51788]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_hssio_rx_mipi_iobuf_rx' (11#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/hdl/bd_4a56_phy_0_hssio_rx_mipi_iobuf_rx.v:49]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_bs_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:16988]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_tx_bs' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14387]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_tx_bs' (12#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14387]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_tx_bs_tri' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:9956]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_tx_bs_tri' (13#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:9956]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_rx_bs' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10363]
+INFO: [Synth 8-6157] synthesizing module 'RX_BITSLICE' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100807]
+INFO: [Synth 8-6155] done synthesizing module 'RX_BITSLICE' (14#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100807]
+INFO: [Synth 8-6157] synthesizing module 'RX_BITSLICE__parameterized0' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100807]
+INFO: [Synth 8-6155] done synthesizing module 'RX_BITSLICE__parameterized0' (14#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100807]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_rx_bs' (15#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10363]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_rxtx_bs' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5372]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_rxtx_bs' (16#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5372]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_bs_top' (17#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:16988]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_bs_ctrl_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1624]
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:740]
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL' (18#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:740]
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL__parameterized0' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:740]
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL__parameterized0' (18#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:740]
+INFO: [Synth 8-6157] synthesizing module 'RIU_OR' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100607]
+INFO: [Synth 8-6155] done synthesizing module 'RIU_OR' (19#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100607]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_bs_ctrl_top' (20#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1624]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_clk_rst_top' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1409]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_clk_scheme' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:975]
+INFO: [Synth 8-6157] synthesizing module 'PLLE4_ADV' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:84696]
+INFO: [Synth 8-6155] done synthesizing module 'PLLE4_ADV' (21#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:84696]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1093]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (22#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1093]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_clk_scheme' (23#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:975]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_rst_scheme' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:332]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_1_sync_cell' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_sync_cell' (24#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_rst_scheme' (25#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:332]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_1_clk_rst_top' (26#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/00e5/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1409]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_hssio_rx_hssio_wiz_top' (27#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx_hssio_wiz_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_1' (28#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_1.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_hssio_rx' (29#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/synth/bd_4a56_phy_0_hssio_rx.v:84]
+WARNING: [Synth 8-7071] port 'pll0_clkout0' of module 'bd_4a56_phy_0_hssio_rx' is unconnected for instance 'bd_4a56_phy_0_rx_hssio_i' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:1238]
+WARNING: [Synth 8-7023] instance 'bd_4a56_phy_0_rx_hssio_i' of module 'bd_4a56_phy_0_hssio_rx' has 69 connections declared, but only 68 given [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:1238]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (30#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'bd_4a56_phy_0_clock_module' [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_clock_module.v:88]
+	Parameter C_DPHY_LANES bound to: 4 - type: integer 
+	Parameter MTBF_SYNC_STAGES bound to: 3 - type: integer 
+	Parameter C_HS_LINE_RATE bound to: 896 - type: integer 
+	Parameter C_STABLE_CLK_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_TXPLL_CLKIN_PERIOD bound to: 8.928000 - type: double 
+	Parameter EN_DPHY_IO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_clock_module' (31#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_clock_module.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_support' (32#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0/support/bd_4a56_phy_0_support.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_c1' (33#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_c1.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0_core' (34#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_core.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'bd_4a56_phy_0' (35#1) [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0.v:91]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2864.754 ; gain = 152.527 ; free physical = 1258 ; free virtual = 3064
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2879.598 ; gain = 167.371 ; free physical = 1232 ; free virtual = 3039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2879.598 ; gain = 167.371 ; free physical = 1232 ; free virtual = 3039
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2891.566 ; gain = 0.000 ; free physical = 4775 ; free virtual = 6591
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3056.348 ; gain = 2.969 ; free physical = 4263 ; free virtual = 6147
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx.xdc] for cell 'inst/inst/bd_4a56_phy_0_rx_support_i/slave_rx.bd_4a56_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx.xdc] for cell 'inst/inst/bd_4a56_phy_0_rx_support_i/slave_rx.bd_4a56_phy_0_rx_hssio_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_4a56_phy_0_hssio_rx.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_4a56_phy_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4a56_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4a56_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3056.348 ; gain = 0.000 ; free physical = 4253 ; free virtual = 6138
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3056.348 ; gain = 0.000 ; free physical = 4249 ; free virtual = 6135
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3056.348 ; gain = 344.121 ; free physical = 3409 ; free virtual = 5526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3056.348 ; gain = 344.121 ; free physical = 3406 ; free virtual = 5524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/bd_4a56_phy_0_rx_support_i/\slave_rx.bd_4a56_phy_0_rx_hssio_i /inst. (constraint file  /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/dont_touch.xdc, line 8).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/bd_4a56_phy_0_rx_support_i/\slave_rx.bd_4a56_phy_0_rx_hssio_i . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3056.348 ; gain = 344.121 ; free physical = 3389 ; free virtual = 5508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rst_blk_state_reg' in module 'mipi_dphy_v4_3_2_rx_rst_logic'
+INFO: [Synth 8-802] inferred FSM for state register 'dl_rx_state_reg' in module 'mipi_dphy_v4_3_2_csi_rx_data_lane_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_hs_high_rates_spec_v1_1.dl_state_reg' in module 'mipi_dphy_v4_3_2_rx_data_lane'
+INFO: [Synth 8-802] inferred FSM for state register 'rst_blk_state_reg' in module 'mipi_dphy_v4_3_2_rx_support_rst_logic'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_RIU_NOT_FROM_PLL.hssio_state_reg' in module 'high_speed_selectio_wiz_v3_6_1_rst_scheme'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RST_BEGIN |                              000 |                              000
+       ASSERT_ALL_RESETS |                              001 |                              001
+      RELEASE_MMCM_RESET |                              010 |                              010
+          RESET_FSM_DONE |                              011 |                              101
+         WAIT_FOR_ENABLE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_blk_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_2_rx_rst_logic'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             DL_RX_BEGIN |                             0000 |                             0000
+        DL_WO_INIT_LP_11 |                             0001 |                             0001
+                  iSTATE |                             0010 |                             1111
+*
+         DL_RX_INIT_DONE |                             0011 |                             0010
+              DL_RX_STOP |                             0100 |                             0011
+           DL_RX_HS_RQST |                             0101 |                             0100
+           DL_RX_HS_TERM |                             0110 |                             0101
+           DL_RX_HS_SYNC |                             0111 |                             0110
+            DL_RX_HS_RUN |                             1000 |                             0111
+          DL_RX_HS_ABORT |                             1001 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dl_rx_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_2_csi_rx_data_lane_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                DL_START |                               00 |                               00
+                 DL_STOP |                               01 |                               01
+               DL_ACTIVE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_hs_high_rates_spec_v1_1.dl_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_2_rx_data_lane'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RST_BEGIN |                              000 |                              000
+       ASSERT_ALL_RESETS |                              001 |                              001
+       RELEASE_PHY_RESET |                              010 |                              010
+          RESET_FSM_DONE |                              011 |                              100
+              CHECK_SRST |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_blk_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_2_rx_support_rst_logic'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+       ASSERT_ALL_RESETS |                        000000001 |                        000000001
+      DEASSERT_PLL_RESET |                        000000010 |                        000000010
+       WAIT_FOR_PLL_LOCK |                        000000100 |                        000000100
+      DEASSERT_BS_RESETS |                        000001000 |                        000001000
+  ASSERT_PLL_CLKOUTPHYEN |                        000010000 |                        000010000
+    WAIT_FOR_BSC_DLY_RDY |                        000100000 |                        000100000
+       ASSERT_BSC_EN_VTC |                        001000000 |                        001000000
+    WAIT_FOR_BSC_VTC_RDY |                        010000000 |                        010000000
+          RESET_SEQ_DONE |                        100000000 |                        100000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'GEN_RIU_NOT_FROM_PLL.hssio_state_reg' in module 'high_speed_selectio_wiz_v3_6_1_rst_scheme'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 3056.348 ; gain = 344.121 ; free physical = 2570 ; free virtual = 4755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 9     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               52 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 9     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 538   
++---Muxes : 
+	   2 Input   15 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 15    
+	  18 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 2     
+	  12 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	  10 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 212   
+	   5 Input    1 Bit        Muxes := 116   
+	   9 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 7     
+	  10 Input    1 Bit        Muxes := 58    
+	   3 Input    1 Bit        Muxes := 21    
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3056.348 ; gain = 344.121 ; free physical = 1652 ; free virtual = 3931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3392.223 ; gain = 679.996 ; free physical = 3649 ; free virtual = 5933
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 3428.246 ; gain = 716.020 ; free physical = 2851 ; free virtual = 5135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 3444.262 ; gain = 732.035 ; free physical = 2491 ; free virtual = 4775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2733 ; free virtual = 5016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2733 ; free virtual = 5016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2758 ; free virtual = 5046
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2756 ; free virtual = 5044
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2734 ; free virtual = 5023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2731 ; free virtual = 5019
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |BITSLICE_CONTROL |     2|
+|3     |BUFG             |     1|
+|4     |BUFGCE           |     2|
+|5     |CARRY8           |    18|
+|6     |LUT1             |   555|
+|7     |LUT2             |   112|
+|8     |LUT3             |   112|
+|9     |LUT4             |    99|
+|10    |LUT5             |   175|
+|11    |LUT6             |   453|
+|12    |MUXF7            |     1|
+|13    |PLLE4_ADV        |     1|
+|14    |RX_BITSLICE      |     5|
+|16    |FDCE             |    65|
+|17    |FDPE             |    13|
+|18    |FDRE             |   937|
+|19    |FDSE             |    57|
+|20    |IBUFDS_DPHY      |     5|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.230 ; gain = 736.004 ; free physical = 2729 ; free virtual = 5018
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 3448.230 ; gain = 559.254 ; free physical = 2762 ; free virtual = 5050
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3448.238 ; gain = 736.004 ; free physical = 2761 ; free virtual = 5050
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3448.238 ; gain = 0.000 ; free physical = 2832 ; free virtual = 5121
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance inst/inst/bd_4a56_phy_0_rx_support_i/slave_rx.bd_4a56_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3504.059 ; gain = 0.000 ; free physical = 2761 ; free virtual = 5049
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 5 instances
+
+Synth Design complete, checksum: c1277fb9
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:07 . Memory (MB): peak = 3504.059 ; gain = 958.836 ; free physical = 2907 ; free virtual = 5197
+INFO: [Common 17-1381] The checkpoint '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/bd_4a56_phy_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_4a56_phy_0, cache-ID = 65900057174be23a
+INFO: [Coretcl 2-1174] Renamed 60 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/liyunzhi/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/bd_4a56_phy_0_synth_1/bd_4a56_phy_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_4a56_phy_0_utilization_synth.rpt -pb bd_4a56_phy_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 18 23:46:23 2021...

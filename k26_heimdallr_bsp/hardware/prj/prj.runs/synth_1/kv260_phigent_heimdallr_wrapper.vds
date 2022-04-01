@@ -1,0 +1,805 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 20 23:30:41 2021
+# Process ID: 7969
+# Current directory: /media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1
+# Command line: vivado -log kv260_phigent_heimdallr_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kv260_phigent_heimdallr_wrapper.tcl
+# Log file: /media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/kv260_phigent_heimdallr_wrapper.vds
+# Journal file: /media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source kv260_phigent_heimdallr_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/phigent_new/kv260_phigent_heimdallr/hw_platform/ipcache'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:vcu:1.2'. The one found in IP location '/workspace/phigent_new/kv260_phigent_heimdallr/hw_platform/iprepo/ip/vcu_v1_2' will take precedence over the same IP in the Xilinx installed IP.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2563.191 ; gain = 0.000 ; free physical = 4940 ; free virtual = 6847
+Command: synth_design -top kv260_phigent_heimdallr_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8004
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2817.910 ; gain = 48.715 ; free physical = 3317 ; free virtual = 5369
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_wrapper' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/sources_1/imports/hdl/kv260_phigent_heimdallr_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:56188]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:56188]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:989]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_PS_0_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_PS_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_PS_0_0' (2#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_PS_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_awready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_wready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_bid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_bresp' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_bvalid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_arready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_rid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_rdata' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_rresp' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_rlast' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp1_rvalid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_awready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_wready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_bid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_bresp' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_bvalid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_arready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_rid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_rdata' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_rresp' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_rlast' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp3_rvalid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_awready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_wready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_bid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_bresp' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_bvalid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_arready' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_rid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_rdata' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_rresp' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_rlast' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'saxigp5_rvalid' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'emio_gpio_t' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'pl_resetn1' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'pl_resetn2' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'pl_resetn3' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'kv260_phigent_heimdallr_PS_0_0' is unconnected for instance 'PS_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+WARNING: [Synth 8-7023] instance 'PS_0' of module 'kv260_phigent_heimdallr_PS_0_0' has 421 connections declared, but only 381 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1541]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2769]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_KXSH5A' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:14803]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_regslice_30' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_30_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_regslice_30' (3#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_30_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'kv260_phigent_heimdallr_s00_regslice_30' is unconnected for instance 's00_regslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15114]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'kv260_phigent_heimdallr_s00_regslice_30' is unconnected for instance 's00_regslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15114]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'kv260_phigent_heimdallr_s00_regslice_30' is unconnected for instance 's00_regslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15114]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'kv260_phigent_heimdallr_s00_regslice_30' is unconnected for instance 's00_regslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15114]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'kv260_phigent_heimdallr_s00_regslice_30' has 84 connections declared, but only 80 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15114]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_KXSH5A' (4#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:14803]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' (5#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2769]
+WARNING: [Synth 8-7071] port 'M00_AXI_araddr' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arburst' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arcache' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arid' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arlen' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arlock' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arregion' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arsize' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_aruser' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_arvalid' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awaddr' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awburst' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awcache' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awid' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awlen' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awlock' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awregion' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awsize' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awuser' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_awvalid' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_bready' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_rready' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_wdata' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_wlast' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7071] port 'M00_AXI_wvalid' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' is unconnected for instance 'axi_ic_accel_ctrl' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+WARNING: [Synth 8-7023] instance 'axi_ic_accel_ctrl' of module 'kv260_phigent_heimdallr_axi_ic_accel_ctrl_0' has 86 connections declared, but only 56 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1923]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:3181]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1BE4AL6' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:9787]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_m00_regslice_15' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_m00_regslice_15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_m00_regslice_15' (6#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_m00_regslice_15_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'kv260_phigent_heimdallr_m00_regslice_15' is unconnected for instance 'm00_regslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10106]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'kv260_phigent_heimdallr_m00_regslice_15' is unconnected for instance 'm00_regslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10106]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'kv260_phigent_heimdallr_m00_regslice_15' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10106]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1BE4AL6' (7#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:9787]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1R5W61Z' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13155]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_us_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_us_0' (8#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'kv260_phigent_heimdallr_auto_us_0' is unconnected for instance 'auto_us' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13489]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'kv260_phigent_heimdallr_auto_us_0' is unconnected for instance 'auto_us' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13489]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'kv260_phigent_heimdallr_auto_us_0' has 76 connections declared, but only 74 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13489]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_regslice_31' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_31_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_regslice_31' (9#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_31_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1R5W61Z' (10#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13155]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_mmu_2' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_mmu_2' (11#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1N712S4' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15589]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_us_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_us_1' (12#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'kv260_phigent_heimdallr_auto_us_1' is unconnected for instance 'auto_us' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15911]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'kv260_phigent_heimdallr_auto_us_1' is unconnected for instance 'auto_us' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15911]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'kv260_phigent_heimdallr_auto_us_1' has 72 connections declared, but only 70 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15911]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s01_regslice_15' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_regslice_15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s01_regslice_15' (13#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_regslice_15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1N712S4' (14#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15589]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_13GWMKH' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16693]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_us_2' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_us_2' (15#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_us_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'kv260_phigent_heimdallr_auto_us_2' is unconnected for instance 'auto_us' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:17015]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'kv260_phigent_heimdallr_auto_us_2' is unconnected for instance 'auto_us' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:17015]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'kv260_phigent_heimdallr_auto_us_2' has 72 connections declared, but only 70 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:17015]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s02_regslice_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s02_regslice_0' (16#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_13GWMKH' (17#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16693]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xbar_6' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xbar_6' (18#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_6_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'kv260_phigent_heimdallr_xbar_6' is unconnected for instance 'xbar' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:4354]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'kv260_phigent_heimdallr_xbar_6' is unconnected for instance 'xbar' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:4354]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'kv260_phigent_heimdallr_xbar_6' has 78 connections declared, but only 76 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:4354]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' (19#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:3181]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_arready' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_awready' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_bresp' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_bvalid' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_rdata' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_rlast' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+WARNING: [Synth 8-7071] port 'S02_AXI_rresp' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' is unconnected for instance 'axi_ic_audio_mcu' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'axi_ic_audio_mcu' of module 'kv260_phigent_heimdallr_axi_ic_audio_mcu_0' has 154 connections declared, but only 136 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:1980]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_capture_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:4433]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1AK3TVW' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:9515]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1AK3TVW' (20#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:9515]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1U7Q7U9' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13647]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_regslice_32' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_regslice_32' (21#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_32_stub.v:6]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'kv260_phigent_heimdallr_s00_regslice_32' has 72 connections declared, but only 70 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13926]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1U7Q7U9' (22#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13647]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_mmu_3' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_mmu_3' (23#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1O0Y7CY' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16057]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1O0Y7CY' (24#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16057]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s01_mmu_2' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_mmu_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s01_mmu_2' (25#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_mmu_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xbar_7' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xbar_7' (26#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_7_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'kv260_phigent_heimdallr_xbar_7' has 78 connections declared, but only 74 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:5408]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_capture_0' (27#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:4433]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_ctrl_100_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:5485]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_O0NBR9' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10719]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_pc_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_pc_0' (28#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'kv260_phigent_heimdallr_auto_pc_0' has 60 connections declared, but only 58 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10958]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_O0NBR9' (29#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10719]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_QRT706' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11551]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_pc_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_pc_1' (30#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'kv260_phigent_heimdallr_auto_pc_1' has 60 connections declared, but only 58 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11790]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_QRT706' (31#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11551]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_GHI4YR' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11851]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_pc_2' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_pc_2' (32#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_GHI4YR' (33#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11851]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_3RSMZ4' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12161]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_3RSMZ4' (34#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12161]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_8UOFW8' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13999]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_regslice_33' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_33_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_regslice_33' (35#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_33_stub.v:6]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'kv260_phigent_heimdallr_s00_regslice_33' has 84 connections declared, but only 82 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:14326]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_8UOFW8' (36#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13999]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xbar_8' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xbar_8' (37#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_ctrl_100_0' (38#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:5485]
+WARNING: [Synth 8-7023] instance 'axi_ic_ctrl_100' of module 'kv260_phigent_heimdallr_axi_ic_ctrl_100_0' has 145 connections declared, but only 115 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2229]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_ctrl_300_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:6707]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1KHVEHJ' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10187]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1KHVEHJ' (39#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10187]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1YBHVJ8' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11419]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1YBHVJ8' (40#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11419]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_10C3ZMY' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12461]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_auto_pc_3' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_auto_pc_3' (41#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_10C3ZMY' (42#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12461]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xbar_9' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xbar_9' (43#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_9_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'kv260_phigent_heimdallr_xbar_9' has 40 connections declared, but only 38 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:7218]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_ctrl_300_0' (44#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:6707]
+INFO: [Synth 8-6157] synthesizing module 'capture_pipeline_0_imp_ZJX11D' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axis_data_fifo_cap_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_data_fifo_cap_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axis_data_fifo_cap_0' (45#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_data_fifo_cap_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axis_subset_converter_0_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axis_subset_converter_0_0' (46#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0' (47#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'mipi_csi2_rx_subsyst_0' of module 'kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0' has 37 connections declared, but only 33 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:398]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_v_frmbuf_wr_0_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_v_frmbuf_wr_0_0' (48#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_frmbuf_wr_0' of module 'kv260_phigent_heimdallr_v_frmbuf_wr_0_0' has 64 connections declared, but only 62 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:432]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xlslice_0_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_0/synth/kv260_phigent_heimdallr_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (49#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xlslice_0_0' (50#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_0/synth/kv260_phigent_heimdallr_xlslice_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'capture_pipeline_0_imp_ZJX11D' (51#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12]
+WARNING: [Synth 8-7023] instance 'capture_pipeline_0' of module 'capture_pipeline_0_imp_ZJX11D' has 85 connections declared, but only 79 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2425]
+INFO: [Synth 8-6157] synthesizing module 'capture_pipeline_1_imp_AA65I' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:500]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axis_data_fifo_cap_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_data_fifo_cap_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axis_data_fifo_cap_1' (52#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_data_fifo_cap_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axis_subset_converter_0_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_subset_converter_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axis_subset_converter_0_1' (53#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axis_subset_converter_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1' (54#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'mipi_csi2_rx_subsyst_0' of module 'kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1' has 37 connections declared, but only 33 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:886]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_v_frmbuf_wr_0_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_v_frmbuf_wr_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_v_frmbuf_wr_0_1' (55#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_v_frmbuf_wr_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_frmbuf_wr_0' of module 'kv260_phigent_heimdallr_v_frmbuf_wr_0_1' has 64 connections declared, but only 62 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:920]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xlslice_0_1' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_1/synth/kv260_phigent_heimdallr_xlslice_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xlslice_0_1' (56#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_1/synth/kv260_phigent_heimdallr_xlslice_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'capture_pipeline_1_imp_AA65I' (57#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:500]
+WARNING: [Synth 8-7023] instance 'capture_pipeline_1' of module 'capture_pipeline_1_imp_AA65I' has 85 connections declared, but only 79 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2505]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_clk_wiz_0_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_clk_wiz_0_0' (58#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'kv260_phigent_heimdallr_clk_wiz_0_0' has 8 connections declared, but only 7 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2585]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_proc_sys_reset_100MHz_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_proc_sys_reset_100MHz_0' (59#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_100MHz' of module 'kv260_phigent_heimdallr_proc_sys_reset_100MHz_0' has 10 connections declared, but only 7 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2593]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_proc_sys_reset_300MHz_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_proc_sys_reset_300MHz_0' (60#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_300MHz' of module 'kv260_phigent_heimdallr_proc_sys_reset_300MHz_0' has 10 connections declared, but only 7 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2601]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2609]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_proc_sys_reset_600MHz_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_proc_sys_reset_600MHz_0' (61#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_600MHz' of module 'kv260_phigent_heimdallr_proc_sys_reset_600MHz_0' has 10 connections declared, but only 5 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2609]
+INFO: [Synth 8-6157] synthesizing module 'vcu_imp_1KHQ364' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:17161]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_vcu_dec_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:7259]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1M6LTH4' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10319]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_m00_regslice_16' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_m00_regslice_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_m00_regslice_16' (62#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_m00_regslice_16_stub.v:6]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'kv260_phigent_heimdallr_m00_regslice_16' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10638]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1M6LTH4' (63#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:10319]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_16ETS1X' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12763]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_regslice_34' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_34_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_regslice_34' (64#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_34_stub.v:6]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'kv260_phigent_heimdallr_s00_regslice_34' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:13074]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_16ETS1X' (65#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:12763]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_mmu_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_mmu_0' (66#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1CBM7CM' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15197]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s01_regslice_16' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_regslice_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s01_regslice_16' (67#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_regslice_16_stub.v:6]
+WARNING: [Synth 8-7023] instance 's01_regslice' of module 'kv260_phigent_heimdallr_s01_regslice_16' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15508]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1CBM7CM' (68#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:15197]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s01_mmu_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s01_mmu_0' (69#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xbar_10' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xbar_10' (70#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_vcu_dec_0' (71#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:7259]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_ic_vcu_enc_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:8387]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_S7TRFK' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11019]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_m00_regslice_17' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_m00_regslice_17_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_m00_regslice_17' (72#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_m00_regslice_17_stub.v:6]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'kv260_phigent_heimdallr_m00_regslice_17' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11338]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_S7TRFK' (73#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:11019]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_CG0HEL' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:14411]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_regslice_35' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_35_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_regslice_35' (74#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_regslice_35_stub.v:6]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'kv260_phigent_heimdallr_s00_regslice_35' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:14722]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_CG0HEL' (75#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:14411]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s00_mmu_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s00_mmu_1' (76#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s00_mmu_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_79ADPQ' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16301]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s01_regslice_17' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_regslice_17_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s01_regslice_17' (77#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_regslice_17_stub.v:6]
+WARNING: [Synth 8-7023] instance 's01_regslice' of module 'kv260_phigent_heimdallr_s01_regslice_17' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16612]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_79ADPQ' (78#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:16301]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_s01_mmu_1' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_mmu_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_s01_mmu_1' (79#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_s01_mmu_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xbar_11' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xbar_11' (80#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_xbar_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_ic_vcu_enc_0' (81#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:8387]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_axi_reg_slice_vmcu_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axi_reg_slice_vmcu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_axi_reg_slice_vmcu_0' (82#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_axi_reg_slice_vmcu_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_reg_slice_vmcu' of module 'kv260_phigent_heimdallr_axi_reg_slice_vmcu_0' has 80 connections declared, but only 78 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:18134]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_vcu_0_0' [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_vcu_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_vcu_0_0' (83#1) [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/.Xil/Vivado-7969-liyunzhi-ThinkPad-X1/realtime/kv260_phigent_heimdallr_vcu_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'vcu_0' of module 'kv260_phigent_heimdallr_vcu_0_0' has 219 connections declared, but only 211 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:18213]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xlslice_0_2' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_2/synth/kv260_phigent_heimdallr_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (83#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xlslice_0_2' (84#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_2/synth/kv260_phigent_heimdallr_xlslice_0_2.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_imp_1KHQ364' (85#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:17161]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xlconcat_0_0_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlconcat_0_0_0/synth/kv260_phigent_heimdallr_xlconcat_0_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (86#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xlconcat_0_0_0' (87#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlconcat_0_0_0/synth/kv260_phigent_heimdallr_xlconcat_0_0_0.v:60]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2762]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xlconstant_0_0' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlconstant_0_0/synth/kv260_phigent_heimdallr_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (88#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xlconstant_0_0' (89#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlconstant_0_0/synth/kv260_phigent_heimdallr_xlconstant_0_0.v:57]
+WARNING: [Synth 8-7023] instance 'xlconstant_0' of module 'kv260_phigent_heimdallr_xlconstant_0_0' has 1 connections declared, but only 0 given [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:2762]
+INFO: [Synth 8-6157] synthesizing module 'kv260_phigent_heimdallr_xlslice_0_3' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_3/synth/kv260_phigent_heimdallr_xlslice_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (89#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_xlslice_0_3' (90#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xlslice_0_3/synth/kv260_phigent_heimdallr_xlslice_0_3.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr' (91#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/synth/kv260_phigent_heimdallr.v:989]
+INFO: [Synth 8-6155] done synthesizing module 'kv260_phigent_heimdallr_wrapper' (92#1) [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/sources_1/imports/hdl/kv260_phigent_heimdallr_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2890.816 ; gain = 121.621 ; free physical = 3687 ; free virtual = 5745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2906.660 ; gain = 137.465 ; free physical = 3757 ; free virtual = 5815
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2906.660 ; gain = 137.465 ; free physical = 3757 ; free virtual = 5815
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2918.566 ; gain = 0.000 ; free physical = 3743 ; free virtual = 5801
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_data_fifo_cap_0/kv260_phigent_heimdallr_axis_data_fifo_cap_0/kv260_phigent_heimdallr_axis_data_fifo_cap_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/axis_data_fifo_cap'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_data_fifo_cap_0/kv260_phigent_heimdallr_axis_data_fifo_cap_0/kv260_phigent_heimdallr_axis_data_fifo_cap_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/axis_data_fifo_cap'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_subset_converter_0_0/kv260_phigent_heimdallr_axis_subset_converter_0_0/kv260_phigent_heimdallr_axis_subset_converter_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/axis_subset_converter_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_subset_converter_0_0/kv260_phigent_heimdallr_axis_subset_converter_0_0/kv260_phigent_heimdallr_axis_subset_converter_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/axis_subset_converter_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_v_frmbuf_wr_0_0/kv260_phigent_heimdallr_v_frmbuf_wr_0_0/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/v_frmbuf_wr_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_v_frmbuf_wr_0_0/kv260_phigent_heimdallr_v_frmbuf_wr_0_0/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/v_frmbuf_wr_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_data_fifo_cap_1/kv260_phigent_heimdallr_axis_data_fifo_cap_1/kv260_phigent_heimdallr_axis_data_fifo_cap_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/axis_data_fifo_cap'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_data_fifo_cap_1/kv260_phigent_heimdallr_axis_data_fifo_cap_1/kv260_phigent_heimdallr_axis_data_fifo_cap_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/axis_data_fifo_cap'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_subset_converter_0_1/kv260_phigent_heimdallr_axis_subset_converter_0_1/kv260_phigent_heimdallr_axis_subset_converter_0_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/axis_subset_converter_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axis_subset_converter_0_1/kv260_phigent_heimdallr_axis_subset_converter_0_1/kv260_phigent_heimdallr_axis_subset_converter_0_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/axis_subset_converter_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_v_frmbuf_wr_0_1/kv260_phigent_heimdallr_v_frmbuf_wr_0_1/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/v_frmbuf_wr_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_v_frmbuf_wr_0_1/kv260_phigent_heimdallr_v_frmbuf_wr_0_1/kv260_phigent_heimdallr_v_frmbuf_wr_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/v_frmbuf_wr_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/mipi_csi2_rx_subsyst_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/capture_pipeline_1/mipi_csi2_rx_subsyst_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axi_reg_slice_vmcu_0/kv260_phigent_heimdallr_axi_reg_slice_vmcu_0/kv260_phigent_heimdallr_s00_regslice_19_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_reg_slice_vmcu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_axi_reg_slice_vmcu_0/kv260_phigent_heimdallr_axi_reg_slice_vmcu_0/kv260_phigent_heimdallr_s00_regslice_19_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_reg_slice_vmcu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_vcu_0_0/kv260_phigent_heimdallr_vcu_0_0/kv260_phigent_heimdallr_vcu_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/vcu_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_vcu_0_0/kv260_phigent_heimdallr_vcu_0_0/kv260_phigent_heimdallr_vcu_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/vcu_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_10/kv260_phigent_heimdallr_xbar_10/kv260_phigent_heimdallr_xbar_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/xbar'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_10/kv260_phigent_heimdallr_xbar_10/kv260_phigent_heimdallr_xbar_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/xbar'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_34/kv260_phigent_heimdallr_s00_regslice_34/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_34/kv260_phigent_heimdallr_s00_regslice_34/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s00_couplers/s00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_regslice_16/kv260_phigent_heimdallr_s01_regslice_16/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_regslice_16/kv260_phigent_heimdallr_s01_regslice_16/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s01_couplers/s01_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_m00_regslice_16/kv260_phigent_heimdallr_m00_regslice_16/kv260_phigent_heimdallr_m00_regslice_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_m00_regslice_16/kv260_phigent_heimdallr_m00_regslice_16/kv260_phigent_heimdallr_m00_regslice_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/m00_couplers/m00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_0/kv260_phigent_heimdallr_s00_mmu_0/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s00_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_0/kv260_phigent_heimdallr_s00_mmu_0/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s00_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_mmu_0/kv260_phigent_heimdallr_s01_mmu_0/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s01_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_mmu_0/kv260_phigent_heimdallr_s01_mmu_0/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s01_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_11/kv260_phigent_heimdallr_xbar_11/kv260_phigent_heimdallr_xbar_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/xbar'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_11/kv260_phigent_heimdallr_xbar_11/kv260_phigent_heimdallr_xbar_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/xbar'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_35/kv260_phigent_heimdallr_s00_regslice_35/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_35/kv260_phigent_heimdallr_s00_regslice_35/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s00_couplers/s00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_regslice_17/kv260_phigent_heimdallr_s01_regslice_17/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_regslice_17/kv260_phigent_heimdallr_s01_regslice_17/kv260_phigent_heimdallr_s00_regslice_22_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s01_couplers/s01_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_m00_regslice_17/kv260_phigent_heimdallr_m00_regslice_17/kv260_phigent_heimdallr_m00_regslice_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_m00_regslice_17/kv260_phigent_heimdallr_m00_regslice_17/kv260_phigent_heimdallr_m00_regslice_11_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/m00_couplers/m00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_1/kv260_phigent_heimdallr_s00_mmu_1/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s00_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_1/kv260_phigent_heimdallr_s00_mmu_1/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s00_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_mmu_1/kv260_phigent_heimdallr_s01_mmu_1/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s01_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_mmu_1/kv260_phigent_heimdallr_s01_mmu_1/kv260_phigent_heimdallr_s00_mmu_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s01_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_30/kv260_phigent_heimdallr_s00_regslice_30/kv260_phigent_heimdallr_s00_regslice_18_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_accel_ctrl/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_30/kv260_phigent_heimdallr_s00_regslice_30/kv260_phigent_heimdallr_s00_regslice_18_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_accel_ctrl/s00_couplers/s00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_6/kv260_phigent_heimdallr_xbar_6/kv260_phigent_heimdallr_xbar_6_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/xbar'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_6/kv260_phigent_heimdallr_xbar_6/kv260_phigent_heimdallr_xbar_6_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/xbar'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_31/kv260_phigent_heimdallr_s00_regslice_31/kv260_phigent_heimdallr_s00_regslice_19_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_31/kv260_phigent_heimdallr_s00_regslice_31/kv260_phigent_heimdallr_s00_regslice_19_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_couplers/s00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_us_0/kv260_phigent_heimdallr_auto_us_0/kv260_phigent_heimdallr_auto_us_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_couplers/auto_us'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_us_0/kv260_phigent_heimdallr_auto_us_0/kv260_phigent_heimdallr_auto_us_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_couplers/auto_us'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_regslice_15/kv260_phigent_heimdallr_s01_regslice_15/kv260_phigent_heimdallr_s01_regslice_15_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_regslice_15/kv260_phigent_heimdallr_s01_regslice_15/kv260_phigent_heimdallr_s01_regslice_15_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s01_couplers/s01_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_us_1/kv260_phigent_heimdallr_auto_us_1/kv260_phigent_heimdallr_auto_us_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s01_couplers/auto_us'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_us_1/kv260_phigent_heimdallr_auto_us_1/kv260_phigent_heimdallr_auto_us_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s01_couplers/auto_us'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s02_regslice_0/kv260_phigent_heimdallr_s02_regslice_0/kv260_phigent_heimdallr_s01_regslice_15_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s02_couplers/s02_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s02_regslice_0/kv260_phigent_heimdallr_s02_regslice_0/kv260_phigent_heimdallr_s01_regslice_15_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s02_couplers/s02_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_us_2/kv260_phigent_heimdallr_auto_us_2/kv260_phigent_heimdallr_auto_us_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s02_couplers/auto_us'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_us_2/kv260_phigent_heimdallr_auto_us_2/kv260_phigent_heimdallr_auto_us_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s02_couplers/auto_us'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_m00_regslice_15/kv260_phigent_heimdallr_m00_regslice_15/kv260_phigent_heimdallr_m00_regslice_9_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_m00_regslice_15/kv260_phigent_heimdallr_m00_regslice_15/kv260_phigent_heimdallr_m00_regslice_9_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/m00_couplers/m00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_2/kv260_phigent_heimdallr_s00_mmu_2/kv260_phigent_heimdallr_s00_mmu_2_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_2/kv260_phigent_heimdallr_s00_mmu_2/kv260_phigent_heimdallr_s00_mmu_2_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_7/kv260_phigent_heimdallr_xbar_7/kv260_phigent_heimdallr_xbar_7_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/xbar'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_7/kv260_phigent_heimdallr_xbar_7/kv260_phigent_heimdallr_xbar_7_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/xbar'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_32/kv260_phigent_heimdallr_s00_regslice_32/kv260_phigent_heimdallr_s00_regslice_20_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_32/kv260_phigent_heimdallr_s00_regslice_32/kv260_phigent_heimdallr_s00_regslice_20_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/s00_couplers/s00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_3/kv260_phigent_heimdallr_s00_mmu_3/kv260_phigent_heimdallr_s00_mmu_3_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/s00_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_mmu_3/kv260_phigent_heimdallr_s00_mmu_3/kv260_phigent_heimdallr_s00_mmu_3_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/s00_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_mmu_2/kv260_phigent_heimdallr_s01_mmu_2/kv260_phigent_heimdallr_s00_mmu_3_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/s01_mmu'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s01_mmu_2/kv260_phigent_heimdallr_s01_mmu_2/kv260_phigent_heimdallr_s00_mmu_3_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_capture/s01_mmu'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_8/kv260_phigent_heimdallr_xbar_8/kv260_phigent_heimdallr_xbar_8_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/xbar'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_8/kv260_phigent_heimdallr_xbar_8/kv260_phigent_heimdallr_xbar_8_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/xbar'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_33/kv260_phigent_heimdallr_s00_regslice_33/kv260_phigent_heimdallr_s00_regslice_21_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_s00_regslice_33/kv260_phigent_heimdallr_s00_regslice_33/kv260_phigent_heimdallr_s00_regslice_21_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/s00_couplers/s00_regslice'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_0/kv260_phigent_heimdallr_auto_pc_0/kv260_phigent_heimdallr_auto_pc_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m00_couplers/auto_pc'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_0/kv260_phigent_heimdallr_auto_pc_0/kv260_phigent_heimdallr_auto_pc_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m00_couplers/auto_pc'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_1/kv260_phigent_heimdallr_auto_pc_1/kv260_phigent_heimdallr_auto_pc_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m01_couplers/auto_pc'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_1/kv260_phigent_heimdallr_auto_pc_1/kv260_phigent_heimdallr_auto_pc_1_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m01_couplers/auto_pc'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_2/kv260_phigent_heimdallr_auto_pc_2/kv260_phigent_heimdallr_auto_pc_2_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m02_couplers/auto_pc'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_2/kv260_phigent_heimdallr_auto_pc_2/kv260_phigent_heimdallr_auto_pc_2_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m02_couplers/auto_pc'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_9/kv260_phigent_heimdallr_xbar_9/kv260_phigent_heimdallr_xbar_9_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_300/xbar'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_xbar_9/kv260_phigent_heimdallr_xbar_9/kv260_phigent_heimdallr_xbar_9_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_300/xbar'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_3/kv260_phigent_heimdallr_auto_pc_3/kv260_phigent_heimdallr_auto_pc_3_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_300/s00_couplers/auto_pc'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_auto_pc_3/kv260_phigent_heimdallr_auto_pc_3/kv260_phigent_heimdallr_auto_pc_3_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/axi_ic_ctrl_300/s00_couplers/auto_pc'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_PS_0_0/kv260_phigent_heimdallr_PS_0_0/kv260_phigent_heimdallr_PS_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/PS_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_PS_0_0/kv260_phigent_heimdallr_PS_0_0/kv260_phigent_heimdallr_PS_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/PS_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_clk_wiz_0_0/kv260_phigent_heimdallr_clk_wiz_0_0/kv260_phigent_heimdallr_clk_wiz_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/clk_wiz_0'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_clk_wiz_0_0/kv260_phigent_heimdallr_clk_wiz_0_0/kv260_phigent_heimdallr_clk_wiz_0_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/clk_wiz_0'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/proc_sys_reset_100MHz'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0/kv260_phigent_heimdallr_proc_sys_reset_100MHz_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/proc_sys_reset_100MHz'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/proc_sys_reset_300MHz'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0/kv260_phigent_heimdallr_proc_sys_reset_300MHz_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/proc_sys_reset_300MHz'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/proc_sys_reset_600MHz'
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0/kv260_phigent_heimdallr_proc_sys_reset_600MHz_0_in_context.xdc] for cell 'kv260_phigent_heimdallr_i/proc_sys_reset_600MHz'
+Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc:80]
+WARNING: [Vivado 12-4702] DRIVE is not a supported property on input port(s). Setting is ignored. [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc:81]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc:90]
+WARNING: [Vivado 12-4702] DRIVE is not a supported property on input port(s). Setting is ignored. [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc:91]
+Finished Parsing XDC File [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.srcs/constrs_1/imports/xdc/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/kv260_phigent_heimdallr_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/kv260_phigent_heimdallr_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3039.348 ; gain = 0.000 ; free physical = 3630 ; free virtual = 5692
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3039.348 ; gain = 0.000 ; free physical = 3630 ; free virtual = 5692
+WARNING: [Timing 38-316] Clock period '6.666' specified during out-of-context synthesis of instance 'kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0' at clock pin 'video_aclk' is different from the actual clock period '3.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '6.666' specified during out-of-context synthesis of instance 'kv260_phigent_heimdallr_i/capture_pipeline_1/mipi_csi2_rx_subsyst_0' at clock pin 'video_aclk' is different from the actual clock period '3.333', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3042.316 ; gain = 273.121 ; free physical = 3734 ; free virtual = 5796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3042.316 ; gain = 273.121 ; free physical = 3734 ; free virtual = 5796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_n. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_n. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_p. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_p. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[2]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[2]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[3]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[3]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[2]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[2]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[3]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[3]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_1_clk_n. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_1_clk_n. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_1_clk_p. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_1_clk_p. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_1_data_n[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_1_data_n[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_1_data_n[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_1_data_n[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_1_data_p[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_1_data_p[0]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_1_data_p[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_1_data_p[1]. (constraint file  /workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.gen/sources_1/bd/kv260_phigent_heimdallr/ip/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1/kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1_in_context.xdc, line 15).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_0/axis_data_fifo_cap. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_0/axis_subset_converter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_0/v_frmbuf_wr_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_0/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_0/mipi_csi2_rx_subsyst_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_1/axis_data_fifo_cap. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_1/axis_subset_converter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_1/v_frmbuf_wr_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_1/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/capture_pipeline_1/mipi_csi2_rx_subsyst_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_reg_slice_vmcu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/vcu_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s01_couplers/s01_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/m00_couplers/m00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s00_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec/s01_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_dec. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s01_couplers/s01_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/m00_couplers/m00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s00_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc/s01_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/vcu/axi_ic_vcu_enc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/xlconcat_0_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_accel_ctrl/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_accel_ctrl. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s01_couplers/s01_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s01_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s02_couplers/s02_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s02_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/m00_couplers/m00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu/s00_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_audio_mcu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_capture/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_capture/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_capture/s00_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_capture/s01_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_capture. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_100/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_100/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_100/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_100. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_300/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_300/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/axi_ic_ctrl_300. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/PS_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/proc_sys_reset_100MHz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/proc_sys_reset_300MHz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kv260_phigent_heimdallr_i/proc_sys_reset_600MHz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3042.316 ; gain = 273.121 ; free physical = 3734 ; free virtual = 5796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3042.316 ; gain = 273.121 ; free physical = 3730 ; free virtual = 5793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3042.316 ; gain = 273.121 ; free physical = 3713 ; free virtual = 5784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3429.707 ; gain = 660.512 ; free physical = 3140 ; free virtual = 5213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3432.707 ; gain = 663.512 ; free physical = 3137 ; free virtual = 5210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3452.746 ; gain = 683.551 ; free physical = 3134 ; free virtual = 5207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3134 ; free virtual = 5207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3134 ; free virtual = 5207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3132 ; free virtual = 5205
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3132 ; free virtual = 5205
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3132 ; free virtual = 5205
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3132 ; free virtual = 5205
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------------------+----------+
+|      |BlackBox name                                     |Instances |
++------+--------------------------------------------------+----------+
+|1     |kv260_phigent_heimdallr_s00_regslice_30           |         1|
+|2     |kv260_phigent_heimdallr_s00_mmu_2                 |         1|
+|3     |kv260_phigent_heimdallr_xbar_6                    |         1|
+|4     |kv260_phigent_heimdallr_m00_regslice_15           |         1|
+|5     |kv260_phigent_heimdallr_auto_us_0                 |         1|
+|6     |kv260_phigent_heimdallr_s00_regslice_31           |         1|
+|7     |kv260_phigent_heimdallr_auto_us_1                 |         1|
+|8     |kv260_phigent_heimdallr_s01_regslice_15           |         1|
+|9     |kv260_phigent_heimdallr_auto_us_2                 |         1|
+|10    |kv260_phigent_heimdallr_s02_regslice_0            |         1|
+|11    |kv260_phigent_heimdallr_s00_mmu_3                 |         1|
+|12    |kv260_phigent_heimdallr_s01_mmu_2                 |         1|
+|13    |kv260_phigent_heimdallr_xbar_7                    |         1|
+|14    |kv260_phigent_heimdallr_s00_regslice_32           |         1|
+|15    |kv260_phigent_heimdallr_xbar_8                    |         1|
+|16    |kv260_phigent_heimdallr_auto_pc_0                 |         1|
+|17    |kv260_phigent_heimdallr_auto_pc_1                 |         1|
+|18    |kv260_phigent_heimdallr_auto_pc_2                 |         1|
+|19    |kv260_phigent_heimdallr_s00_regslice_33           |         1|
+|20    |kv260_phigent_heimdallr_xbar_9                    |         1|
+|21    |kv260_phigent_heimdallr_auto_pc_3                 |         1|
+|22    |kv260_phigent_heimdallr_PS_0_0                    |         1|
+|23    |kv260_phigent_heimdallr_clk_wiz_0_0               |         1|
+|24    |kv260_phigent_heimdallr_proc_sys_reset_100MHz_0   |         1|
+|25    |kv260_phigent_heimdallr_proc_sys_reset_300MHz_0   |         1|
+|26    |kv260_phigent_heimdallr_proc_sys_reset_600MHz_0   |         1|
+|27    |kv260_phigent_heimdallr_axis_data_fifo_cap_0      |         1|
+|28    |kv260_phigent_heimdallr_axis_subset_converter_0_0 |         1|
+|29    |kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_0  |         1|
+|30    |kv260_phigent_heimdallr_v_frmbuf_wr_0_0           |         1|
+|31    |kv260_phigent_heimdallr_axis_data_fifo_cap_1      |         1|
+|32    |kv260_phigent_heimdallr_axis_subset_converter_0_1 |         1|
+|33    |kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0_1  |         1|
+|34    |kv260_phigent_heimdallr_v_frmbuf_wr_0_1           |         1|
+|35    |kv260_phigent_heimdallr_s00_mmu_0                 |         1|
+|36    |kv260_phigent_heimdallr_s01_mmu_0                 |         1|
+|37    |kv260_phigent_heimdallr_xbar_10                   |         1|
+|38    |kv260_phigent_heimdallr_m00_regslice_16           |         1|
+|39    |kv260_phigent_heimdallr_s00_regslice_34           |         1|
+|40    |kv260_phigent_heimdallr_s01_regslice_16           |         1|
+|41    |kv260_phigent_heimdallr_s00_mmu_1                 |         1|
+|42    |kv260_phigent_heimdallr_s01_mmu_1                 |         1|
+|43    |kv260_phigent_heimdallr_xbar_11                   |         1|
+|44    |kv260_phigent_heimdallr_m00_regslice_17           |         1|
+|45    |kv260_phigent_heimdallr_s00_regslice_35           |         1|
+|46    |kv260_phigent_heimdallr_s01_regslice_17           |         1|
+|47    |kv260_phigent_heimdallr_axi_reg_slice_vmcu_0      |         1|
+|48    |kv260_phigent_heimdallr_vcu_0_0                   |         1|
++------+--------------------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------------------+------+
+|      |Cell                                            |Count |
++------+------------------------------------------------+------+
+|1     |kv260_phigent_heimdallr_PS_0                    |     1|
+|2     |kv260_phigent_heimdallr_auto_pc                 |     4|
+|6     |kv260_phigent_heimdallr_auto_us                 |     3|
+|9     |kv260_phigent_heimdallr_axi_reg_slice_vmcu      |     1|
+|10    |kv260_phigent_heimdallr_axis_data_fifo_cap      |     2|
+|12    |kv260_phigent_heimdallr_axis_subset_converter_0 |     2|
+|14    |kv260_phigent_heimdallr_clk_wiz_0               |     1|
+|15    |kv260_phigent_heimdallr_m00_regslice            |     3|
+|18    |kv260_phigent_heimdallr_mipi_csi2_rx_subsyst_0  |     2|
+|20    |kv260_phigent_heimdallr_proc_sys_reset_100MHz   |     1|
+|21    |kv260_phigent_heimdallr_proc_sys_reset_300MHz   |     1|
+|22    |kv260_phigent_heimdallr_proc_sys_reset_600MHz   |     1|
+|23    |kv260_phigent_heimdallr_s00_mmu                 |     4|
+|27    |kv260_phigent_heimdallr_s00_regslice            |     6|
+|33    |kv260_phigent_heimdallr_s01_mmu                 |     3|
+|36    |kv260_phigent_heimdallr_s01_regslice            |     3|
+|39    |kv260_phigent_heimdallr_s02_regslice            |     1|
+|40    |kv260_phigent_heimdallr_v_frmbuf_wr_0           |     2|
+|42    |kv260_phigent_heimdallr_vcu_0                   |     1|
+|43    |kv260_phigent_heimdallr_xbar                    |     6|
+|49    |IBUF                                            |     2|
+|50    |IOBUF                                           |     2|
+|51    |OBUF                                            |    12|
+|52    |OBUFT                                           |     1|
++------+------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.684 ; gain = 689.488 ; free physical = 3132 ; free virtual = 5204
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3458.684 ; gain = 553.832 ; free physical = 3169 ; free virtual = 5242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3458.691 ; gain = 689.488 ; free physical = 3169 ; free virtual = 5242
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3462.652 ; gain = 0.000 ; free physical = 3252 ; free virtual = 5324
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3517.309 ; gain = 0.000 ; free physical = 3170 ; free virtual = 5242
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+Synth Design complete, checksum: 3d53fe31
+INFO: [Common 17-83] Releasing license: Synthesis
+211 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 3517.309 ; gain = 954.117 ; free physical = 3319 ; free virtual = 5391
+INFO: [Common 17-1381] The checkpoint '/media/liyunzhi/workspace/phigent_new/kv260_phigent_heimdallr/prj/prj.runs/synth_1/kv260_phigent_heimdallr_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kv260_phigent_heimdallr_wrapper_utilization_synth.rpt -pb kv260_phigent_heimdallr_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 20 23:31:29 2021...
