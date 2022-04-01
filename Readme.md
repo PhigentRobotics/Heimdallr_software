@@ -41,8 +41,9 @@ After flashing SD card, remove the SD card and perform the following steps:
 1. dnf install -y xir xir-dev vart vart-dev packagegroup-petalinux-vitisai-dev
 2. cp -r k26heimdallr /lib/firmware/xilinx/
 3. #copy the bin、lib、config、models to the board fold（such as:/opt）
-4. xmutil unloadapp
-5. xmutil loadapp k26heimdallr
+4. tar -xf libopencv_world.so.xz # then copy libopencv_world.so into lib folder
+5. xmutil unloadapp
+6. xmutil loadapp k26heimdallr
 
 
 
