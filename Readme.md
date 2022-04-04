@@ -1,5 +1,26 @@
 # Phigent Heimdallr deployment instructions
 
+# File structure
+├── bin // folder for executable binary runing on board
+
+├── boot_fs  // boot files for Heimdallr-DEB, there are the linux kernel containing driver and device tree of Heimdallr-DEB
+
+├── config  // configurations for executable runing on board
+
+├── heimdallr-hmi-bin.tgz  // tar file of PC client, which is runing on Ubuntu 20.04 x86 PC
+
+├── k26heimdallr  // the FPGA app bits should be placed onto board /lib/firmware/xilinx/
+
+├── k26_heimdallr_bsp  // petalinux project for Heimdallr-DEB, which can produce petalinux sdcard flashing images with petalinux toolchain
+
+├── lib  // libraries supports executable runing on board
+
+├── libopencv_world.so.xz  // the opencv library file which too large to upload to github, so being compressed
+
+├── models  // the model files that runing on FPGA DPU to output disparity
+
+└── Readme.md
+
 # Hardware prepare
 
 1. FPGA board: Xilinx KV260 or Heimdallr-DEB
